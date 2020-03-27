@@ -8,7 +8,6 @@ header{
     text-align: center;
 
 }
-
 nav{
     text-align: center;
     padding-top: 14px;
@@ -28,6 +27,7 @@ nav a{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 body{
     background-color: snow;
     margin: 0;
@@ -41,6 +41,23 @@ body{
     width: auto;
    
 }
+nav button{
+    float: right;
+    z-index: 99;
+    font-size: 0.8vw;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 0, 0.322);
+    color: snow;
+    border-radius: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+nav button:hover{
+    background-color: red;
+
+}
+
 
 .slideshow{
     position: relative;
@@ -49,7 +66,8 @@ body{
         width: 100%;
         height: auto;
         opacity: 0.8;
-        font-size: 0;    
+        font-size: 0; 
+         
     
 }
 .slideshow a{
@@ -79,7 +97,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgb(202, 196, 196);
+    background: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,6 +132,9 @@ body{
     opacity: 0.8;
     float: right;
     font-size: 0;
+    padding-bottom: 200px;  
+    
+
 }
 .about h1{
     text-align: center;
@@ -139,8 +160,185 @@ body{
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 1vw;
+  
+}
+#topbutton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    z-index: 99;
+    font-size: 1.5vw;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 0, 0.322);
+    color: snow;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #topbutton:hover {
+    background-color: rgb(255, 0, 0.932);
+  }
+* {
+    box-sizing: border-box;
+}
+.lookbook{
+    padding-bottom: 200px;
+}
 
+.lookbook h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    font-size: 2vw;
+}
+.lookbook h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 0, 0, 0.932);
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 2vw;
     
+}
+
+.lookbook .column {
+    float: left;
+    width: 25%;
+    padding: 5px;
+    opacity: 0.8;
+}
+
+.lookbook .column:hover {
+    background-color: rgb(255, 0, 0);
+
+}
+
+.lookbook .column h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: snow;
+
+}
+
+.lookbook .row{
+    clear: both;
+}
+/* Clearfix (clear floats) */
+.lookbook .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+    .lookbook .column {
+        width: 100%;
+    }
+}
+
+.shop{
+    padding-bottom: 200px;
+}
+
+.shop h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    font-size: 2vw;
+}
+.shop h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 0, 0, 0.932);
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 2vw;
+    
+}
+* {
+    box-sizing: border-box;
+}
+.community{
+    padding-bottom: 200px;
+}
+
+.community h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    font-size: 2vw;
+}
+.community h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 0, 0, 0.932);
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 2vw;
+    
+}
+
+.community .column {
+    float: left;
+    width: 100%;
+    opacity: 0.8;
+    position: relative;
+    padding-bottom: 40%;
+    height: 0;
+    overflow: hidden;
+
+}
+
+.community .column iframe,
+.community .column object,
+.community .column embed {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 70%;
+    bottom: 0;
+
+}
+
+.community .column:hover {
+    background-color: rgb(255, 0, 0);
+
+}
+
+.community .column h2 {
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    color: snow;
+    font-size: 2vw;
+
+
+
+
+}
+
+.community .row{
+    clear: both;
+}
+/* Clearfix (clear floats) */
+.community .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+    .community .column {
+        width: 100%;
+    }
 }
 
 .instagram h2{

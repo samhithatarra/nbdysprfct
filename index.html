@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nobody's Perfect - NBDYSPRFCT</title>
     <script src="script.js"></script>
-    <script type="text/javascript" src="js/jquery.scrollmagic.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css?ver=100">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -19,6 +20,7 @@
 
     </a>
 
+
 </header>
 
 
@@ -28,10 +30,11 @@
     <a href="#collection-component-1585087106496">SHOP</a>
     <a href="#LOOKBOOK">LOOKBOOK</a>
     <a href="#COMMUNITY">COMMUNITY</a>
+    <button onclick="document.getElementById('my_audio').muted = !document.getElementById('my_audio').muted">MUTE /
+        UNMUTE</button>
 
 
 </nav>
-
 
 
 
@@ -45,7 +48,8 @@
             <img class="mySlides" src="images/slideshow5.jpg" style="width:100%">
             <img class="mySlides" src="images/slideshow3.jpg" style="width:100%">
             <img class="mySlides" src="images/slideshow4.jpg" style="width:100%">
-            <button><a href="shop.html" style="text-decoration: none">VIEW FEATURED COLLECTION</a></button>
+            <button><a href="#collection-component-1585087106496" style="text-decoration: none">VIEW FEATURED
+                    COLLECTION</a></button>
         </div>
 
         <script>
@@ -66,10 +70,11 @@
             }
         </script>
 
-        <div class="about" id="ABOUT US">
+        <div class="about" id="ABOUT US" data-aos="fade-in">
 
             <img src="images/about us.jpg" align="left">
             <br>
+            <button type="button"><i class="fas fa-chevron-up"></i></button>
             <h1>ABOUT US</h1>
 
             <h2>_________</h2>
@@ -84,82 +89,34 @@
 
             <h2>that nobody is perfect and that’s perfectly fine.</h2>
         </div>
+        <button onclick="topFunction()" id="topbutton" title="Go to top">TOP</button>
+        <script>
 
+            var mybutton = document.getElementById("topbutton");
+            window.onscroll = function () { scrollFunction() };
 
-
-    </div>
-    <style>
-        * {
-                box-sizing: border-box;
-            }
-    
-            .column {
-                float: left;
-                width: 25%;
-                padding: 5px;
-                opacity: 0.8;
-            }
-    
-            .column:hover {
-                background-color: rgb(255, 0, 0);
-    
-            }
-    
-            .column h2 {
-                text-align: center;
-                font-family: Arial, Helvetica, sans-serif;
-                color: snow;
-    
-            }
-    
-            .row {
-                
-                clear: both;
-            }
-            /* Clearfix (clear floats) */
-            .row::after {
-                content: "";
-                clear: both;
-                display: table;
-            }
-    
-            /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-            @media screen and (max-width: 500px) {
-                .column {
-                    width: 100%;
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
                 }
             }
-        </style>
-    <div class="row" id="LOOKBOOK">
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
 
-        <div class="column">
-            <a href="world_collec.html">
-                <img src="images/cover1.jpg" alt="The World Is Art Collection" style="width:100%">
-            </a>
-            <h2>THE WORLD IS ART COLLECTION</h2>
 
-        </div>
-        <div class="column">
-            <a href="peace_collec.html">
-                <img src="images/cover2.jpg" alt="Peace Capsule Collection" style="width:100%">
-            </a>
-            <h2>PEACE CAPSULE COLLECTION</h2>
-        </div>
-        <div class="column">
-            <a href="unity_collec.html">
-                <img src="images/cover3.jpg" alt="Unity Collection" style="width:100%">
-            </a>
-            <h2>UNITY COLLECTION</h2>
-        </div>
-        <div class="column">
-            <a href="rainbow_tee.html">
-                <img src="images/cover4.jpg" alt="Rainbow Ringer Tee" style="width:100%">
-            </a>
-            <h2>RAINBOW RINGER TEE</h2>
-        </div>
     </div>
 
-    <div id='collection-component-1585087106496'></div>
+    <div class=shop id='collection-component-1585087106496' data-aos="fade-in">
+        <h1>SHOP</h1>
+
+        <h2>_________</h2>
+        <br>
+    </div>
     <script type="text/javascript">
         /*<![CDATA[*/
         (function () {
@@ -314,104 +271,121 @@
         })();
 /*]]>*/
     </script>
-    <style>
-        * {
-                box-sizing: border-box;
-            }
-    
-            .block {
-                float: left;
-                width: 100%;
-                opacity: 0.8;
-                position: relative;
-                padding-bottom: 40%;
-                height: 0;
-                overflow: hidden;
-    
-            }
-    
-            .block iframe,
-            .block object,
-            .block embed {
-                position: absolute;
-                left: 0;
-                width: 50%;
-                height: 70%;
-                bottom: 0;
-    
-            }
-    
-            .block:hover {
-                background-color: rgb(255, 0, 0);
-    
-            }
-    
-            .block h2 {
-                text-align: right;
-                font-family: Arial, Helvetica, sans-serif;
-                color: snow;
-                font-size: 2vw;
-    
-    
-    
-    
-            }
-    
-            .chunk{
-                clear: both;
-            }
-            /* Clearfix (clear floats) */
-            .chunk::after {
-                content: "";
-                clear: both;
-                display: table;
-            }
-    
-            /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-            @media screen and (max-width: 500px) {
-                .column {
-                    width: 100%;
-                }
-            }
-        </style>
 
-    <div class="chunk" id="COMMUNITY">
+    <section class=lookbook id="LOOKBOOK" data-aos="fade-in">
 
-        <div class="block">
-            <iframe width="800" height="600" src="https://www.youtube.com/embed/y9p4HEVf_iE">
-            </iframe>
-            <h2>PRODUCT OF LA | A POP UP</h2>
+        <div class="row">
+            <br>
+            <h1>LOOKBOOK</h1>
 
+            <h2>_________</h2>
+
+            <div class="column">
+                <a href="world_collec.html">
+                    <img src="images/cover1.jpg" alt="The World Is Art Collection" style="width:100%">
+                </a>
+                <h2>THE WORLD IS ART COLLECTION</h2>
+
+            </div>
+            <div class="column">
+                <a href="peace_collec.html">
+                    <img src="images/cover2.jpg" alt="Peace Capsule Collection" style="width:100%">
+                </a>
+                <h2>PEACE CAPSULE COLLECTION</h2>
+            </div>
+            <div class="column">
+                <a href="unity_collec.html">
+                    <img src="images/cover3.jpg" alt="Unity Collection" style="width:100%">
+                </a>
+                <h2>UNITY COLLECTION</h2>
+            </div>
+            <div class="column">
+                <a href="rainbow_tee.html">
+                    <img src="images/cover4.jpg" alt="Rainbow Ringer Tee" style="width:100%">
+                </a>
+                <h2>RAINBOW RINGER TEE</h2>
+            </div>
         </div>
-        <div class="block">
-            <iframe width="800" height="600" src="https://www.youtube.com/embed/NwSBUj6crn4">
-            </iframe>
-            <h2>SANTA ANA | A POP UP</h2>
+        <section>
 
-        </div>
+            <section id="COMMUNITY" class="community" data-aos="fade-in">
+                <div class="row">
+                    <br>
+                    <h1>COMMUNITY</h1>
 
-        <div class="block">
-            <iframe width="700" height="500" src="https://www.youtube.com/embed/DIthlb7THTM">
-            </iframe>
-            <h2>NOBODY'S PERFECT | A DOCUMENTARY</h2>
+                    <h2>_________</h2>
 
-        </div>
-        <div class="block">
-            <iframe width="800" height="600" src="https://www.youtube.com/embed/_HQ2a0gsBH8">
-            </iframe>
-            <h2>NOBODY'S PERFECT | A SPOKEN WORD</h2>
+                    <div class="column">
+                        <iframe width="800" height="600" src="https://www.youtube.com/embed/y9p4HEVf_iE">
+                        </iframe>
+                        <h2>PRODUCT OF LA | A POP UP</h2>
 
-        </div>
+                    </div>
+                    <div class="column">
+                        <iframe width="800" height="600" src="https://www.youtube.com/embed/NwSBUj6crn4">
+                        </iframe>
+                        <h2>SANTA ANA | A POP UP</h2>
 
-        <div class="block">
-            <iframe width="800" height="600" src="https://www.youtube.com/embed/xLSupyakagE">
-            </iframe>
-            <h2>NOBODY'S PERFECT | A BTS</h2>
+                    </div>
 
-        </div>
-    </div>
+                    <div class="column">
+                        <iframe width="700" height="600" src="https://www.youtube.com/embed/DIthlb7THTM">
+                        </iframe>
+                        <h2>NOBODY'S PERFECT | A DOCUMENTARY</h2>
 
+                    </div>
+                    <div class="column">
+                        <iframe width="800" height="600" src="https://www.youtube.com/embed/_HQ2a0gsBH8">
+                        </iframe>
+                        <h2>NOBODY'S PERFECT | A SPOKEN WORD</h2>
 
+                    </div>
+
+                    <div class="column">
+                        <iframe width="800" height="600" src="https://www.youtube.com/embed/xLSupyakagE">
+                        </iframe>
+                        <h2>NOBODY'S PERFECT | A BTS</h2>
+
+                    </div>
+                </div>
+            </section>
+
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+                AOS.init({
+                    offset: 400,
+                    duration: 1000
+                });
+            </script>
+
+            <script>
+                (function ($) {
+                    var $animation_elements = $('.et-waypoint'),
+                        $window = $(window);
+
+                    function check_if_in_view() {
+                        var window_height = $window.height(),
+                            window_top_position = $window.scrollTop(),
+                            window_bottom_position = (window_top_position + window_height);
+
+                        $animation_elements.each(function () {
+                            var $element = $(this),
+                                element_height = $element.outerHeight(),
+                                element_top_position = $element.offset().top,
+                                element_bottom_position = (element_top_position + element_height);
+
+                            //check to see if this element is within viewport
+                            if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
+                                $element.addClass('et-animated');
+                            } else {
+                                $element.removeClass('et-animated');
+                            }
+                        });
+                    }
+
+                    $window.on('scroll resize', check_if_in_view);
+                })(jQuery);
+            </script>
 </body>
 
 <footer>
