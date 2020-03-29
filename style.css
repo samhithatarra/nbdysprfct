@@ -61,7 +61,7 @@ nav button{
 
 }
 nav button:hover{
-    background-color: red;
+    background-color:rgba(255, 0, 0, 0.932);
 
 }
 
@@ -84,7 +84,7 @@ nav button:hover{
     
 }
 .slideshow button:hover{
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: rgba(255, 0, 0, 0.932));
 
 }
 .slideshow button{
@@ -222,7 +222,7 @@ nav button:hover{
 }
 
 .lookbook .column:hover {
-    background-color: rgb(255, 0, 0);
+    background-color: rgba(255, 0, 0, 0.932);
 
 }
 
@@ -244,6 +244,7 @@ nav button:hover{
 }
 
 .shop{
+    clear: both;
     padding-bottom: 200px;
 }
 
@@ -317,7 +318,7 @@ nav button:hover{
 
 
 .community .column:hover {
-    background-color: rgb(255, 0, 0);
+    background-color: rgba(255, 0, 0, 0.932);
 
 }
 
@@ -398,24 +399,24 @@ footer i{
 .WIA{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    color: red;
+    color: rgba(255, 0, 0, 0.932);
 }
 .PC{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    color: red;
+    color: rgba(255, 0, 0, 0.932);
 }
 
 .U{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    color: red;
+    color: rgba(255, 0, 0, 0.932);
 }
 
 .RR{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    color: red;
+    color: rgba(255, 0, 0, 0.932);
 }
 
 
