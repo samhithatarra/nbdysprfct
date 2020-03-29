@@ -1,3 +1,7 @@
+
+* {
+    box-sizing: border-box;
+}
 html{
     height: 100%;
     scroll-behavior: smooth;
@@ -28,6 +32,7 @@ nav a{
 }
 
 
+
 body{
     background-color: snow;
     margin: 0;
@@ -44,13 +49,15 @@ body{
 nav button{
     float: right;
     z-index: 99;
-    font-size: 0.8vw;
+    font-size: 0.9vw;
     border: none;
     outline: none;
     background-color: rgb(0, 0, 0.322);
     color: snow;
     border-radius: 1px;
     font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
 
 }
 nav button:hover{
@@ -63,7 +70,7 @@ nav button:hover{
     position: relative;
 }
 .slideshow img{
-        width: 100%;
+        max-width: 100%;
         height: auto;
         opacity: 0.8;
         font-size: 0; 
@@ -87,6 +94,9 @@ nav button:hover{
     background-color: rgba(0, 0, 0, 0.534);
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
 
 }
 
@@ -104,7 +114,7 @@ nav button:hover{
 
 }
 .loader >video{
-    width: 500px;
+    width: 250px;
 }
 
 .loader.hidden{
@@ -174,7 +184,7 @@ nav button:hover{
     background-color: rgb(0, 0, 0.322);
     color: snow;
     cursor: pointer;
-    padding: 10px;
+    padding: 20px;
     border-radius: 1px;
     font-family: Arial, Helvetica, sans-serif;
   }
@@ -182,9 +192,7 @@ nav button:hover{
   #topbutton:hover {
     background-color: rgb(255, 0, 0.932);
   }
-* {
-    box-sizing: border-box;
-}
+
 .lookbook{
     padding-bottom: 200px;
 }
@@ -235,13 +243,6 @@ nav button:hover{
     display: table;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
-    .lookbook .column {
-        width: 100%;
-    }
-}
-
 .shop{
     padding-bottom: 200px;
 }
@@ -262,12 +263,7 @@ nav button:hover{
     font-size: 2vw;
     
 }
-* {
-    box-sizing: border-box;
-}
-.community{
-    padding-bottom: 200px;
-}
+
 
 .community h1{
     text-align: center;
@@ -287,7 +283,6 @@ nav button:hover{
 }
 
 .community .column {
-    float: left;
     width: 100%;
     opacity: 0.8;
     position: relative;
@@ -297,9 +292,11 @@ nav button:hover{
 
 }
 
-.community .column iframe,
-.community .column object,
-.community .column embed {
+
+
+.community .column:nth-child(2n+0) iframe,
+.community .column:nth-child(2n+0) object,
+.community .column:nth-child(2n+0) embed{
     position: absolute;
     left: 0;
     width: 50%;
@@ -307,25 +304,42 @@ nav button:hover{
     bottom: 0;
 
 }
+.community .column:nth-child(2n+1) iframe,
+.community .column:nth-child(2n+1) object,
+.community .column:nth-child(2n+1) embed{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 70%;
+    bottom: 0;
+
+}
+
 
 .community .column:hover {
     background-color: rgb(255, 0, 0);
 
 }
 
-.community .column h2 {
+.community .column:nth-child(2n+0) h2 {
     text-align: right;
     font-family: Arial, Helvetica, sans-serif;
     color: snow;
     font-size: 2vw;
-
-
-
-
 }
 
+.community .column:nth-child(2n+1) h2 {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    color: snow;
+    font-size: 2vw;
+}
 .community .row{
     clear: both;
+    max-width: 100%;
+    margin-right: 10vw; 
+    margin-left: 10vw; 
+    display: block;
 }
 /* Clearfix (clear floats) */
 .community .row::after {
@@ -334,12 +348,6 @@ nav button:hover{
     display: table;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
-    .community .column {
-        width: 100%;
-    }
-}
 
 .instagram h2{
     clear: both;
@@ -351,7 +359,7 @@ nav button:hover{
 
 
 footer{
-    padding-bottom: 100px;
+    bottom: 0;
     clear: both;
     background-color: snow;
     text-align: center;
@@ -411,4 +419,74 @@ footer i{
 }
 
 
+@media screen and (max-width: 650px){
+    nav a{
+      font-size: 2.7vw;
+    }
+    nav button{
+        font-size: 1.2vw;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+    .slideshow button a{
+       font-size: 1.6vw;
+    }
 
+    .slideshow button{
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        
+    }
+    .about h1{
+        font-size: 4vw;
+    }
+    .about h2{
+        font-size: 4vw;
+    }
+    .about p{
+        font-size: 2vw;
+    }
+
+    .about img{
+        display: none;
+        
+    }
+
+    .about{
+        margin-bottom: 200px;
+
+    }
+    .shop h1{
+        font-size: 4vw;
+    }
+    .shop h2{
+        font-size: 4vw;
+    }
+
+    .lookbook h1{
+        font-size: 4vw;
+    }
+    .lookbook h2{
+        font-size: 4vw;
+    }
+
+    .community h1{
+        font-size: 4vw;
+    }
+    .community h2{
+        font-size: 4vw;
+    } 
+
+    #topbutton{
+        font-size: 4vw;
+    }
+    .lookbook .column {
+        width: 100%;
+    }
+    .community .column{
+        width: 100%;
+    }
+
+
+  }

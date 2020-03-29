@@ -24,7 +24,7 @@
 </header>
 
 
-<nav>
+<nav role="custom-dropdown">
 
     <a href="#ABOUT US">ABOUT US</a>
     <a href="#collection-component-1585087106496">SHOP</a>
@@ -43,11 +43,32 @@
     <div class="container">
 
         <div class="slideshow">
-            <img class="mySlides" src="images/background.jpeg" style="width:100%">
-            <img class="mySlides" src="images/slideshow2.jpg" style="width:100%">
-            <img class="mySlides" src="images/slideshow5.jpg" style="width:100%">
-            <img class="mySlides" src="images/slideshow3.jpg" style="width:100%">
-            <img class="mySlides" src="images/slideshow4.jpg" style="width:100%">
+            <picture class="mySlides">
+                <source media="(min-width: 650px)" srcset="images/background.jpeg">
+                <source media="(min-width: 465px)" srcset="images/SSmobile1.png">
+                <img src="images/background.jpeg">
+            </picture>
+            <picture class="mySlides">
+                <source media="(min-width: 650px)" srcset="images/slideshow2.jpg">
+                <source media="(min-width: 465px)" srcset="images/SSmobile2.png">
+                <img src="images/slideshow2.jpg">
+            </picture>
+            <picture class="mySlides">
+                <source media="(min-width: 650px)" srcset="images/slideshow5.jpg">
+                <source media="(min-width: 465px)" srcset="images/SSmobile5.png">
+                <img src="images/slideshow5.jpg">
+            </picture>
+            <picture class="mySlides">
+                <source media="(min-width: 650px)" srcset="images/slideshow3.jpg">
+                <source media="(min-width: 465px)" srcset="images/SSmobile3.png">
+                <img src="images/slideshow3.jpg">
+            </picture>
+            <picture class="mySlides">
+                <source media="(min-width: 650px)" srcset="images/slideshow4.jpg">
+                <source media="(min-width: 465px)" srcset="images/SSmobile4.png">
+                <img src="images/slideshow4.jpg">
+            </picture>
+
             <button><a href="#collection-component-1585087106496" style="text-decoration: none">VIEW FEATURED
                     COLLECTION</a></button>
         </div>
@@ -74,7 +95,7 @@
 
             <img src="images/about us.jpg" align="left">
             <br>
-           
+
             <h1>ABOUT US</h1>
 
             <h2>_________</h2>
@@ -411,17 +432,16 @@
     <i class="fa fa-cc-mastercard" style="font-size:24px"></i>
     <i class="fa fa-cc-diners-club" style="font-size:24px"></i>
 
-
-    <audio src="NP Song.wav" id="my_audio" loop="loop"></audio>
-    <script type="text/javascript">
-        window.onclick = function () {
-            var audio = document.getElementById("my_audio");
-            audio.volume = 0.05;
-            audio.play();
-        }
-    </script>
-
 </footer>
+
+<audio src="NP Song.wav" id="my_audio" loop="loop"></audio>
+<script type="text/javascript">
+    window.onclick = function () {
+        var audio = document.getElementById("my_audio");
+        audio.volume = 0.05;
+        audio.play();
+    }
+</script>
 
 
 </html>

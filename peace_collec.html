@@ -192,6 +192,24 @@
 
 
 <body>
+    <button onclick="topFunction()" id="topbutton" title="Go to top">TOP</button>
+    <script>
+
+        var mybutton = document.getElementById("topbutton");
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
     <div class="loader">
         <video src="NP2.mp4" muted autoplay playsinline loop></video>
     </div>
@@ -277,6 +295,17 @@
 
 
 <footer>
+    <div class="instagram">
+        <br>
+        <marquee behavior="scroll" direction="left">
+            <h2 align="right"> SHOP OUR INSTAGRAM @NBDYS.PRFCT ... SHOP OUR INSTAGRAM @NBDYS.PRFCT ... SHOP OUR
+                INSTAGRAM
+                @NBDYS.PRFCT ... SHOP OUR INSTAGRAM @NBDYS.PRFCT ... SHOP OUR INSTAGRAM @NBDYS.PRFCT ... SHOP
+                OUR
+                INSTAGRAM @NBDYS.PRFCT ... SHOP OUR INSTAGRAM @NBDYS.PRFCT ... SHOP OUR INSTAGRAM
+                @NBDYS.PRFCT ... SHOP OUR INSTAGRAM @NBDYS.PRFCT ... SHOP OUR INSTAGRAM @NBDYS.PRFCT ... </h2>
+        </marquee>
+    </div>
 
     <a href="https://www.instagram.com/nbdys.prfct/"><i class="fa fa-instagram"></i></a>
     <br>
