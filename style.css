@@ -455,7 +455,6 @@ footer i{
 
     .about{
         margin-bottom: 200px;
-
     }
     .shop h1{
         font-size: 4vw;
@@ -463,12 +462,17 @@ footer i{
     .shop h2{
         font-size: 4vw;
     }
-
+    .community {
+        padding-top: 200px;
+    }
     .lookbook h1{
         font-size: 4vw;
     }
     .lookbook h2{
         font-size: 4vw;
+    }
+    .lookbook .column {
+        width: 50%;
     }
 
     .community h1{
@@ -479,11 +483,9 @@ footer i{
     } 
 
     #topbutton{
-        font-size: 4vw;
+        font-size: 3vw;
     }
-    .lookbook .column {
-        width: 100%;
-    }
+
     .community .column{
         width: 100%;
     }
