@@ -8,6 +8,7 @@ html{
 }
 
 header{
+    clear: both;
     height: 100px;
     text-align: center;
 
@@ -46,7 +47,7 @@ body{
     width: auto;
    
 }
-nav button{
+button{
     float: right;
     z-index: 99;
     font-size: 0.9vw;
@@ -60,7 +61,7 @@ nav button{
     padding-bottom: 5px;
 
 }
-nav button:hover{
+button:hover{
     background-color:rgba(255, 0, 0, 0.932);
 
 }
