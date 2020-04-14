@@ -431,7 +431,7 @@ footer i{
 @media screen and (max-width: 850px){
     nav{
         position: absolute;
-        padding-top: 400px;
+        padding-top: 300px;
     }
     nav a{
       font-size: 7vw;
