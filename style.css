@@ -287,6 +287,9 @@ header button:hover{
 }
 
 
+.media {
+    padding-bottom: 300px;
+}
 
 .media h1{
     text-align: center;
@@ -315,6 +318,10 @@ footer p{
     font-size: 15px;
     text-align: center;
     color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: line-through;
+    text-decoration-color: snow;
 
 }
 footer h2{
@@ -438,6 +445,7 @@ footer i{
         border: none;
     
     }
+
     .about h1{
         font-size: 10vw;
     }
@@ -461,8 +469,7 @@ footer i{
     }
   
     .media {
-        padding-top: 200px;
-        padding-bottom: 100px;
+        padding-bottom: 300px;
     }
     .lookbook h1{
         font-size: 10vw;
@@ -476,23 +483,10 @@ footer i{
         font-size: 10vw;
     }
     .media iframe{
-        width: 350px;
-        height: 300px;
-    }
-    .slider {
-        width: auto;
-        height: auto;
-        display: flex;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-    }
-    .slide{
-        width: 300px;
-        flex-shrink: 0;
-        height: 100%;
+        width: 250px;
+        height: 200px;
     }
     
-
     #topbutton{
         font-size: 6vw;
     }
@@ -517,4 +511,5 @@ footer i{
     .RR h2{
         font-size: 7vw;
     }
+
   }
