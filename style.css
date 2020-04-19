@@ -33,7 +33,7 @@ nav{
         
 }
 nav a:hover{
-    background-color:rgba(255, 0, 0, 0.932);
+    /* background-color:rgba(255, 0, 0, 0.932); */
     text-decoration-color: rgba(255, 0, 0, 0.932);
     
 }
@@ -41,19 +41,19 @@ nav a{
     line-height: 170%;
     text-decoration: none;
     font-size: 5vw;
-    color:snow;
+    color:black;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: line-through;
-    text-decoration-color: black;
+    text-decoration-color: snow;
     font-weight: bold;
-    background-color: black;
+    background-color: snow;
 
 }
 
 
 
 body{
-    background-color: black;
+    background-color: snow;
     margin: 0;
     padding: 0;
     /* background-image: url(images/slideshow3.jpg); */
@@ -74,19 +74,19 @@ header button{
     font-size: 1.4vw;
     border: none;
     outline: none;
-    background-color:black;
-    color: snow;
+    background-color:transparent;
+    color: black;
     border-radius: 1px;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 5px;
     padding-bottom: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
     font-weight: bold;
-    text-decoration: line-through;
-    text-decoration-color: black;
 
 }
 header button:hover{
-    background-color:rgba(255, 0, 0, 0.932);
+    text-decoration: line-through;
     text-decoration-color: rgba(255, 0, 0, 0.932);
 
 }
@@ -171,13 +171,9 @@ header button:hover{
     letter-spacing: 4px;
     font-size: 4vw;
     text-decoration: line-through;
-    text-decoration-color: black;
-    background-color: black;
-    width: 500px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    color: snow;
+    text-decoration-color: rgba(255, 0, 0, 0.932);
+    background-color: snow;
+    color: black;
     
 }
 .about h2{
@@ -186,9 +182,9 @@ header button:hover{
     color: rgba(255, 0, 0, 0.932);
     text-transform: uppercase;
     font-weight: bolder;
-    font-size: 2vw;
+    font-size: 2.5vw;
     text-decoration: line-through;
-    text-decoration-color: black;
+    text-decoration-color: snow;
     padding-bottom: 200px;
     
 }
@@ -200,7 +196,7 @@ header button:hover{
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 1.2vw;
-    color: snow;
+    color: black;
   
 }
 #topbutton {
@@ -212,20 +208,19 @@ header button:hover{
     font-size: 2vw;
     border: none;
     outline: none;
-    background-color: black;
-    color: snow;
+    background-color: transparent;
+    color: black;
     cursor: pointer;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 1px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    text-decoration: line-through;
-    text-decoration-color: rgb(255, 0, 0.932);
+
   }
   
   #topbutton:hover {
-    background-color: rgb(255, 0, 0.932);
+    text-decoration: line-through;
     text-decoration-color: rgb(255, 0, 0.932);
   }
 
@@ -240,13 +235,9 @@ header button:hover{
     letter-spacing: 4px;
     font-size: 4vw;
     text-decoration: line-through;
-    text-decoration-color: black;
-    background-color: black;
-    width: 400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    color: snow;
+    text-decoration-color: rgba(255, 0, 0, 0.932);
+    background-color: snow;
+    color: black;
     
 }
 
@@ -254,7 +245,8 @@ header button:hover{
     float: left;
     width: 25%;
     padding: 5px;
-    opacity: 0.8;
+    opacity: 0.9;
+    color: snow;
 }
 
 .lookbook .column:hover {
@@ -262,8 +254,7 @@ header button:hover{
     color: snow;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    text-decoration: line-through;
-    text-decoration-color: rgba(255, 0, 0, 0.932);
+
 
 }
 
@@ -291,13 +282,9 @@ header button:hover{
     letter-spacing: 4px;
     font-size: 4vw;
     text-decoration: line-through;
-    text-decoration-color: black;
-    background-color: black;
-    width: 190px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    color: snow;
+    text-decoration-color: rgba(255, 0, 0, 0.932);
+    background-color: snow;
+    color: black;
     
 }
 
@@ -310,13 +297,9 @@ header button:hover{
     letter-spacing: 4px;
     font-size: 4vw;
     text-decoration: line-through;
-    text-decoration-color: black;
-    background-color: black;
-    width: 180px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    color: snow;
+    text-decoration-color: rgba(255, 0, 0, 0.932);
+    background-color: snow;
+    color: black;
 }
 
 
@@ -324,7 +307,7 @@ header button:hover{
 footer{
     bottom: 0;
     clear: both;
-    background-color: black;
+    background-color: snow;
     text-align: center;
     padding-top: 40px;
 
@@ -333,7 +316,7 @@ footer{
 footer p{
     font-size: 15px;
     text-align: center;
-    color: snow;
+    color: black;
 
 }
 footer h2{
@@ -350,7 +333,7 @@ footer a{
 footer i{
     padding-left: 20px;
     padding-right: 20px;
-    color: snow;
+    color: black;
 
 }
 
@@ -365,7 +348,8 @@ footer i{
     color: rgba(255, 0, 0, 0.932);
     letter-spacing: 1px;
     text-decoration: line-through;
-    text-decoration-color: black;
+    text-decoration-color: snow;
+    font-size: 2vw;
 }
 .PC{
     text-align: center;
@@ -373,7 +357,8 @@ footer i{
     color: rgba(255, 0, 0, 0.932);
     letter-spacing: 1px;
     text-decoration: line-through;
-    text-decoration-color: black;
+    text-decoration-color: snow;
+    font-size: 2vw;
 }
 
 .U{
@@ -382,7 +367,8 @@ footer i{
     color: rgba(255, 0, 0, 0.932);
     letter-spacing: 1px;
     text-decoration: line-through;
-    text-decoration-color: black;
+    text-decoration-color: snow;
+    font-size: 2vw;
 }
 
 .RR{
@@ -391,26 +377,26 @@ footer i{
     color: rgba(255, 0, 0, 0.932);
     letter-spacing: 1px;
     text-decoration: line-through;
-    text-decoration-color: black;
+    text-decoration-color: snow;
+    font-size: 2vw;
 }
 #backbutton{
     right: 0;
-    font-size: 1.4vw;
+    font-size: 1.6vw;
     border: none;
     outline: none;
-    background-color:black;
-    color: snow;
+    background-color:transparent;
+    color: black;
     border-radius: 1px;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 5px;
     padding-bottom: 5px;
     font-weight: bolder;
-    text-decoration: line-through;
-    text-decoration-color: rgba(255, 0, 0, 0.932);
+    text-decoration: none;
 }
 
 #backbutton:hover{
-    background-color:rgba(255, 0, 0, 0.932);
+    text-decoration: line-through;
     text-decoration-color: rgba(255, 0, 0, 0.932);
 
 }
@@ -420,11 +406,11 @@ footer i{
     
     nav{
         position: absolute;
-        padding-top: 250px;
+        padding-top: 200px;
     }
     nav a{
       font-size: 12vw;
-      background-color: black;
+      background-color: snow;
       line-height: 170%;
 
     }
@@ -453,9 +439,6 @@ footer i{
     }
     .about h1{
         font-size: 10vw;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
     }
     .about h2{
         font-size: 4.5vw;
