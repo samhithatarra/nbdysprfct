@@ -401,6 +401,9 @@ footer i{
 
 
 @media screen and (max-width: 850px){
+    html{
+        scroll-behavior: smooth;
+    }
     
     nav{
         position: absolute;
@@ -466,7 +469,7 @@ footer i{
     }
 
     .lookbook .column {
-        width: 50%;
+        width: 100%;
     }
 
     .media h1{
@@ -476,7 +479,19 @@ footer i{
         width: 350px;
         height: 300px;
     }
-
+    .slider {
+        width: auto;
+        height: auto;
+        display: flex;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .slide{
+        width: 300px;
+        flex-shrink: 0;
+        height: 100%;
+    }
+    
 
     #topbutton{
         font-size: 6vw;
