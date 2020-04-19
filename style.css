@@ -19,6 +19,7 @@ header{
    
 
 }
+
 nav{
     
     z-index: 999;
@@ -27,6 +28,8 @@ nav{
     padding-top: 150px;
     font-size: 1.3vw;
     display: block;
+    
+    
         
 }
 nav a:hover{
@@ -38,18 +41,19 @@ nav a{
     line-height: 170%;
     text-decoration: none;
     font-size: 5vw;
-    color:black;
+    color:snow;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: line-through;
-    text-decoration-color: snow;
+    text-decoration-color: black;
     font-weight: bold;
-    background-color: snow;
+    background-color: black;
+
 }
 
 
 
 body{
-    background-color: snow;
+    background-color: black;
     margin: 0;
     padding: 0;
     /* background-image: url(images/slideshow3.jpg); */
@@ -63,11 +67,11 @@ body{
     width: auto;
    
 }
-button{
+header button{
     position: absolute;
     right: 0;
     z-index: 1000;
-    font-size: 1.3vw;
+    font-size: 1.4vw;
     border: none;
     outline: none;
     background-color:black;
@@ -76,13 +80,14 @@ button{
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 5px;
     padding-bottom: 5px;
-    font-weight: bolder;
+    font-weight: bold;
     text-decoration: line-through;
     text-decoration-color: black;
 
 }
-button:hover{
+header button:hover{
     background-color:rgba(255, 0, 0, 0.932);
+    text-decoration-color: rgba(255, 0, 0, 0.932);
 
 }
 
@@ -90,6 +95,7 @@ button:hover{
 .slideshow{
     top: 0;
     position: relative;
+    padding-bottom: 200px;
 }
 .slideshow img{
         max-width: 100%;
@@ -113,7 +119,7 @@ button:hover{
     font-size: 6vw;
     z-index: 999;
     position: absolute;
-    bottom: 30px;
+    bottom: 230px;
     left: 0;
     color: snow;
     border: none;
@@ -156,24 +162,22 @@ button:hover{
 }
 
 
-.about img{
-    width: 50%;
-    height: auto;
-    opacity: 0.8;
-    float: right;
-    font-size: 0;
-    padding-bottom: 200px;  
-    
 
-}
 .about h1{
+    
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     letter-spacing: 4px;
     font-size: 3vw;
     text-decoration: line-through;
-    text-decoration-color: rgba(255, 0, 0, 0.932);
+    text-decoration-color: black;
+    background-color: black;
+    width: 320px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: snow;
     
 }
 .about h2{
@@ -184,7 +188,8 @@ button:hover{
     font-weight: bolder;
     font-size: 2vw;
     text-decoration: line-through;
-    text-decoration-color: snow;
+    text-decoration-color: black;
+    padding-bottom: 200px;
     
 }
 
@@ -194,7 +199,8 @@ button:hover{
     font-weight: lighter;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 1vw;
+    font-size: 1.2vw;
+    color: snow;
   
 }
 #topbutton {
@@ -206,7 +212,7 @@ button:hover{
     font-size: 1.5vw;
     border: none;
     outline: none;
-    background-color: rgb(0, 0, 0.322);
+    background-color: black;
     color: snow;
     cursor: pointer;
     padding-top: 10px;
@@ -215,11 +221,12 @@ button:hover{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-decoration: line-through;
-    text-decoration-color: black;
+    text-decoration-color: rgb(255, 0, 0.932);
   }
   
   #topbutton:hover {
     background-color: rgb(255, 0, 0.932);
+    text-decoration-color: rgb(255, 0, 0.932);
   }
 
 .lookbook{
@@ -233,7 +240,13 @@ button:hover{
     letter-spacing: 4px;
     font-size: 3vw;
     text-decoration: line-through;
-    text-decoration-color: rgba(255, 0, 0, 0.932);
+    text-decoration-color: black;
+    background-color: black;
+    width: 320px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: snow;
     
 }
 
@@ -246,18 +259,15 @@ button:hover{
 
 .lookbook .column:hover {
     background-color: rgba(255, 0, 0, 0.932);
+    color: snow;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
     text-decoration: line-through;
     text-decoration-color: rgba(255, 0, 0, 0.932);
 
 }
 
-.lookbook .column h2 {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: snow;
-    
 
-}
 
 .lookbook .row{
     clear: both;
@@ -281,102 +291,40 @@ button:hover{
     letter-spacing: 4px;
     font-size: 3vw;
     text-decoration: line-through;
-    text-decoration-color: rgba(255, 0, 0, 0.932);
+    text-decoration-color: black;
+    background-color: black;
+    width: 190px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: snow;
+    
 }
 
 
 
-.community h1{
+.media h1{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     letter-spacing: 4px;
     font-size: 3vw;
     text-decoration: line-through;
-    text-decoration-color: rgba(255, 0, 0, 0.932);
-}
-
-
-.community .column {
-    width: 100%;
-    opacity: 0.8;
-    position: relative;
-    padding-bottom: 40%;
-    height: 0;
-    overflow: hidden;
-
-}
-
-
-
-.community .column:nth-child(2n+0) iframe,
-.community .column:nth-child(2n+0) object,
-.community .column:nth-child(2n+0) embed{
-    position: absolute;
-    left: 0;
-    width: 50%;
-    height: 70%;
-    bottom: 0;
-
-}
-.community .column:nth-child(2n+1) iframe,
-.community .column:nth-child(2n+1) object,
-.community .column:nth-child(2n+1) embed{
-    position: absolute;
-    right: 0;
-    width: 50%;
-    height: 70%;
-    bottom: 0;
-
-}
-
-
-.community .column:hover {
-    background-color: rgba(255, 0, 0, 0.932);
-
-}
-
-.community .column:nth-child(2n+0) h2 {
-    text-align: right;
-    font-family: Arial, Helvetica, sans-serif;
-    color: snow;
-    font-size: 2vw;
-}
-
-.community .column:nth-child(2n+1) h2 {
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    color: snow;
-    font-size: 2vw;
-}
-.community .row{
-    clear: both;
-    max-width: 100%;
-    margin-right: 10vw; 
-    margin-left: 10vw; 
+    text-decoration-color: black;
+    background-color: black;
+    width: 180px;
     display: block;
-}
-/* Clearfix (clear floats) */
-.community .row::after {
-    content: "";
-    clear: both;
-    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    color: snow;
 }
 
-
-.instagram h2{
-    clear: both;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: black;
-    font-weight: lighter;
-    font-size: 1.3vw;
-}
 
 
 footer{
     bottom: 0;
     clear: both;
-    background-color: snow;
+    background-color: black;
     text-align: center;
     padding-top: 40px;
 
@@ -385,7 +333,7 @@ footer{
 footer p{
     font-size: 15px;
     text-align: center;
-    color: rgba(0, 0, 0, 0.322);
+    color: snow;
 
 }
 footer h2{
@@ -402,6 +350,7 @@ footer a{
 footer i{
     padding-left: 20px;
     padding-right: 20px;
+    color: snow;
 
 }
 
@@ -414,23 +363,56 @@ footer i{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: rgba(255, 0, 0, 0.932);
+    letter-spacing: 1px;
+    text-decoration: line-through;
+    text-decoration-color: black;
 }
 .PC{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: rgba(255, 0, 0, 0.932);
+    letter-spacing: 1px;
+    text-decoration: line-through;
+    text-decoration-color: black;
 }
 
 .U{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: rgba(255, 0, 0, 0.932);
+    letter-spacing: 1px;
+    text-decoration: line-through;
+    text-decoration-color: black;
 }
 
 .RR{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: rgba(255, 0, 0, 0.932);
+    letter-spacing: 1px;
+    text-decoration: line-through;
+    text-decoration-color: black;
+}
+#backbutton{
+    right: 0;
+    font-size: 1.4vw;
+    border: none;
+    outline: none;
+    background-color:black;
+    color: snow;
+    border-radius: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bolder;
+    text-decoration: line-through;
+    text-decoration-color: rgba(255, 0, 0, 0.932);
+}
+
+#backbutton:hover{
+    background-color:rgba(255, 0, 0, 0.932);
+    text-decoration-color: rgba(255, 0, 0, 0.932);
+
 }
 
 
@@ -441,7 +423,7 @@ footer i{
     }
     nav a{
       font-size: 9vw;
-      background-color: snow;
+      background-color: black;
       line-height: 170%;
 
     }
@@ -461,7 +443,7 @@ footer i{
         font-size: 80px;
         z-index: 999;
         position: absolute;
-        bottom: 30px;
+        bottom: 250px;
         left: 0;
         color: snow;
         border: none;
@@ -469,6 +451,9 @@ footer i{
     }
     .about h1{
         font-size: 5vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     .about h2{
         font-size: 4vw;
@@ -491,7 +476,7 @@ footer i{
     .shop h2{
         font-size: 4vw;
     }
-    .community {
+    .media {
         padding-top: 200px;
     }
     .lookbook h1{
@@ -504,10 +489,10 @@ footer i{
         width: 50%;
     }
 
-    .community h1{
+    .media h1{
         font-size: 5vw;
     }
-    .community h2{
+    .media h2{
         font-size: 4vw;
     } 
 
@@ -515,7 +500,7 @@ footer i{
         font-size: 3vw;
     }
 
-    .community .column{
+    .media .column{
         width: 100%;
     }
 

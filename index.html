@@ -2,24 +2,28 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nobody's Perfect - NBDYSPRFCT</title>
-    <script src="script.js"></script>
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="style.css?ver=100">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nobody's Perfect - NBDYSPRFCT</title>
+  <script src="script.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css?ver=100">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<button onclick="document.getElementById('my_audio').muted = !document.getElementById('my_audio').muted">MUTE /
-  UNMUTE</button>
-<header>
-    <a href="index.html">
-        <img src="images/np logo.png" width="200" height="auto" alt="Logo for Nobody's Perfect">
 
-    </a>
+</div>
+
+<header>
+  <button onclick="document.getElementById('my_audio').muted = !document.getElementById('my_audio').muted">MUTE /
+    UNMUTE</button>
+  <a href="index.html">
+    <img src="images/np logo.png" width="200" height="auto" alt="Logo for Nobody's Perfect">
+
+  </a>
+  
 
 
 </header>
@@ -33,9 +37,9 @@
   <br>
   <a href="#LOOKBOOK">LOOKBOOK</a>
   <br>
-  <a href="#COMMUNITY">COMMUNITY</a>
+  <a href="#MEDIA">MEDIA</a>
   <br>
-  
+
 
 
 </nav>
@@ -45,525 +49,492 @@
 
 <body>
 
-    <div class="container">
+  <div class="container">
 
-        <div class="slideshow">
-            <picture class="mySlides">
-                <source media="(min-width: 850px)" srcset="images/slideshow4.jpg">
-                <source media="(max-width: 850px)" srcset="images/SSmobile4.jpg">
-                <img src="images/slideshow4.jpg">
-            </picture>
-            <picture class="mySlides">
-                <source media="(min-width: 850px)" srcset="images/slideshow2.jpg">
-                <source media="(max-width: 850px)" srcset="images/SSmobile2.jpg">
-                <img src="images/slideshow2.jpg">
-            </picture>
-            <picture class="mySlides">
-                <source media="(min-width: 850px)" srcset="images/slideshow5.jpg">
-                <source media="(max-width: 850px)" srcset="images/SSmobile5.jpg">
-                <img src="images/slideshow5.jpg">
-            </picture>
-            <picture class="mySlides">
-                <source media="(min-width: 850px)" srcset="images/slideshow3.jpg">
-                <source media="(max-width: 850px)" srcset="images/SSmobile3.jpg">
-                <img src="images/slideshow3.jpg">
-            </picture>
-            <picture class="mySlides">
-                <source media="(min-width: 850px)" srcset="images/background.jpeg">
-                <source media="(max-width: 850px)" srcset="images/SSmobile1.jpg">
-                <img src="images/background.jpeg">
-            </picture>
-            <a href="#ABOUT US"><i class="fa fa-chevron-down" ></i></a>
-
-        </div>
-
-        <script>
-            var myIndex = 0;
-            carousel();
-
-
-            function carousel() {
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                myIndex++;
-                if (myIndex > x.length) { myIndex = 1 }
-                x[myIndex - 1].style.display = "block";
-                setTimeout(carousel, 4000); // Change image every 2 seconds
-            }
-        </script>
-
-        <div class="about" id="ABOUT US" data-aos="fade-in">
-
-            <img src="images/about us.jpg" align="left">
-            <br>
-
-            <h1>ABOUT US</h1>
-
-
-
-            <p>Everyone has problems, insecurities, unique experiences,
-                <br><br> and difficulties in their lives that ultimately <br><br>shape who
-                they are as a person. With this in mind, <br><br>we aim to change
-                the way people think about their <br><br>lives in comparison to others and
-                to bring <br><br>people closer together with all mediums of art. <br> <br> We are
-                going to spread a message that is universal: <br> <br></p>
-
-            <h2>that nobody is perfect and that’s perfectly fine.</h2>
-        </div>
-        <button onclick="topFunction()" id="topbutton" title="Go to top">TOP</button>
-        <script>
-
-            var mybutton = document.getElementById("topbutton");
-            window.onscroll = function () { scrollFunction() };
-
-            function scrollFunction() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    mybutton.style.display = "block";
-                } else {
-                    mybutton.style.display = "none";
-                }
-            }
-            function topFunction() {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            }
-        </script>
-
+    <div class="slideshow">
+      <picture class="mySlides">
+        <source media="(min-width: 850px)" srcset="images/slideshow4.jpg">
+        <source media="(max-width: 850px)" srcset="images/SSmobile4.jpg">
+        <img src="images/slideshow4.jpg">
+      </picture>
+      <picture class="mySlides">
+        <source media="(min-width: 850px)" srcset="images/slideshow2.jpg">
+        <source media="(max-width: 850px)" srcset="images/SSmobile2.jpg">
+        <img src="images/slideshow2.jpg">
+      </picture>
+      <picture class="mySlides">
+        <source media="(min-width: 850px)" srcset="images/slideshow5.jpg">
+        <source media="(max-width: 850px)" srcset="images/SSmobile5.jpg">
+        <img src="images/slideshow5.jpg">
+      </picture>
+      <picture class="mySlides">
+        <source media="(min-width: 850px)" srcset="images/slideshow3.jpg">
+        <source media="(max-width: 850px)" srcset="images/SSmobile3.jpg">
+        <img src="images/slideshow3.jpg">
+      </picture>
+      <picture class="mySlides">
+        <source media="(min-width: 850px)" srcset="images/background.jpeg">
+        <source media="(max-width: 850px)" srcset="images/SSmobile1.jpg">
+        <img src="images/background.jpeg">
+      </picture>
+      <a href="#ABOUT US"><i class="fa fa-chevron-down"></i></a>
 
     </div>
 
-    <div class=shop id='collection-component-1585087106496' data-aos="fade-in">
-        <h1>SHOP</h1>
+    <script>
+      var myIndex = 0;
+      carousel();
 
-        <br>
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 4000); // Change image every 2 seconds
+      }
+    </script>
+
+    <div class="about" id="ABOUT US" data-aos="fade-in">
+
+      <!-- <img src="images/about us.jpg" align="left">
+      <br> -->
+
+      <h1>ABOUT US</h1>
+      <br>
+
+      <p>Everyone has problems, insecurities, unique experiences,
+        <br><br> and difficulties in their lives that ultimately <br><br>shape who
+        they are as a person. With this in mind, <br><br>we aim to change
+        the way people think about their <br><br>lives in comparison to others and
+        to bring <br><br>people closer together with all mediums of art. <br> <br> We are
+        going to spread a message that is universal: <br> <br></p>
+
+      <h2>that nobody is perfect and that’s perfectly fine.</h2>
+    </div>
+    <button onclick="topFunction()" id="topbutton" title="Go to top">TOP</button>
+    <script>
+
+      var mybutton = document.getElementById("topbutton");
+      window.onscroll = function () { scrollFunction() };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+
+  </div>
+
+  <div class=shop id='collection-component-1585087106496' data-aos="fade-in">
+    <h1>SHOP</h1>
+
+    <br>
     <div id='collection-component-1585453553555'></div>
     <script type="text/javascript">
-    /*<![CDATA[*/
-    (function () {
-      var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-      if (window.ShopifyBuy) {
-        if (window.ShopifyBuy.UI) {
-          ShopifyBuyInit();
+      /*<![CDATA[*/
+      (function () {
+        var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+        if (window.ShopifyBuy) {
+          if (window.ShopifyBuy.UI) {
+            ShopifyBuyInit();
+          } else {
+            loadScript();
+          }
         } else {
           loadScript();
         }
-      } else {
-        loadScript();
-      }
-      function loadScript() {
-        var script = document.createElement('script');
-        script.async = true;
-        script.src = scriptURL;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-        script.onload = ShopifyBuyInit;
-      }
-      function ShopifyBuyInit() {
-        var client = ShopifyBuy.buildClient({
-          domain: 'nbdysprfct.myshopify.com',
-          storefrontAccessToken: '1aa689fedcf3c4fde248521a32c1961e',
-        });
-        ShopifyBuy.UI.onReady(client).then(function (ui) {
-          ui.createComponent('collection', {
-            id: '156706603146',
-            node: document.getElementById('collection-component-1585453553555'),
-            moneyFormat: '%24%7B%7Bamount%7D%7D',
-            options: {
-      "product": {
-        "styles": {
-          "product": {
-            "@media (min-width: 601px)": {
-              "max-width": "calc(25% - 20px)",
-              "margin-left": "20px",
-              "margin-bottom": "50px",
-              "width": "calc(25% - 20px)"
-            },
-            "img": {
-              "height": "calc(100% - 15px)",
-              "position": "absolute",
-              "left": "0",
-              "right": "0",
-              "top": "0"
-            },
-            "imgWrapper": {
-              "padding-top": "calc(75% + 15px)",
-              "position": "relative",
-              "height": "0"
-            }
-          },
-          "title": {
-            "font-family": "Arial, sans-serif",
-            "font-weight": "normal",
-            "color": "#000000"
-          },
-          "button": {
-            "font-family": "Arial, sans-serif",
-            ":hover": {
-              "background-color": "#e62121"
-            },
-            "background-color": "#ff2525",
-            ":focus": {
-              "background-color": "#e62121"
-            },
-            "border-radius": "2px"
-          },
-          "price": {
-            "color": "#898989"
-          },
-          "compareAt": {
-            "color": "#898989"
-          },
-          "unitPrice": {
-            "color": "#898989"
-          }
-        },
-        "buttonDestination": "modal",
-        "contents": {
-          "options": false
-        },
-        "text": {
-          "button": "View product"
+        function loadScript() {
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = scriptURL;
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+          script.onload = ShopifyBuyInit;
         }
-      },
-      "productSet": {
-        "styles": {
-          "products": {
-            "@media (min-width: 601px)": {
-              "margin-left": "-20px"
-            }
-          }
-        }
-      },
-      "modalProduct": {
-        "contents": {
-          "img": false,
-          "imgWithCarousel": true,
-          "button": false,
-          "buttonWithQuantity": true
-        },
-        "styles": {
-          "product": {
-            "@media (min-width: 601px)": {
-              "max-width": "100%",
-              "margin-left": "0px",
-              "margin-bottom": "0px"
-            }
-          },
-          "button": {
-            "font-family": "Arial, sans-serif",
-            ":hover": {
-              "background-color": "#e62121"
-            },
-            "background-color": "#ff2525",
-            ":focus": {
-              "background-color": "#e62121"
-            },
-            "border-radius": "2px"
-          },
-          "title": {
-            "font-family": "Arial, sans-serif",
-            "font-weight": "normal"
-          },
-          "price": {
-            "font-family": "Arial, sans-serif"
-          },
-          "compareAt": {
-            "font-family": "Arial, sans-serif"
-          },
-          "unitPrice": {
-            "font-family": "Arial, sans-serif"
-          },
-          "description": {
-            "font-family": "Arial, sans-serif"
-          }
-        }
-      },
-      "option": {
-        "styles": {
-          "label": {
-            "font-family": "Arial, sans-serif"
-          },
-          "select": {
-            "font-family": "Arial, sans-serif"
-          }
-        }
-      },
-      "cart": {
-        "styles": {
-          "button": {
-            "font-family": "Arial, sans-serif",
-            ":hover": {
-              "background-color": "#e62121"
-            },
-            "background-color": "#ff2525",
-            ":focus": {
-              "background-color": "#e62121"
-            },
-            "border-radius": "2px"
-          },
-          "title": {
-            "color": "#fff5f5"
-          },
-          "header": {
-            "color": "#fff5f5"
-          },
-          "lineItems": {
-            "color": "#fff5f5"
-          },
-          "subtotalText": {
-            "color": "#fff5f5"
-          },
-          "subtotal": {
-            "color": "#fff5f5"
-          },
-          "notice": {
-            "color": "#fff5f5"
-          },
-          "currency": {
-            "color": "#fff5f5"
-          },
-          "close": {
-            "color": "#fff5f5",
-            ":hover": {
-              "color": "#fff5f5"
-            }
-          },
-          "empty": {
-            "color": "#fff5f5"
-          },
-          "noteDescription": {
-            "color": "#fff5f5"
-          },
-          "discountText": {
-            "color": "#fff5f5"
-          },
-          "discountIcon": {
-            "fill": "#fff5f5"
-          },
-          "discountAmount": {
-            "color": "#fff5f5"
-          },
-          "cart": {
-            "background-color": "#000000"
-          },
-          "footer": {
-            "background-color": "#000000"
-          }
-        },
-        "text": {
-          "title": "CART",
-          "total": "Subtotal",
-          "empty": "YOUR CART IS EMPTY"
-        },
-        "popup": false
-      },
-      "toggle": {
-        "styles": {
-          "toggle": {
-            "font-family": "Arial, sans-serif",
-            "background-color": "#ff2525",
-            ":hover": {
-              "background-color": "#e62121"
-            },
-            ":focus": {
-              "background-color": "#e62121"
-            }
-          }
-        }
-      },
-      "lineItem": {
-        "styles": {
-          "variantTitle": {
-            "color": "#fff5f5"
-          },
-          "title": {
-            "color": "#fff5f5"
-          },
-          "price": {
-            "color": "#fff5f5"
-          },
-          "fullPrice": {
-            "color": "#fff5f5"
-          },
-          "discount": {
-            "color": "#fff5f5"
-          },
-          "discountIcon": {
-            "fill": "#fff5f5"
-          },
-          "quantity": {
-            "color": "#fff5f5"
-          },
-          "quantityIncrement": {
-            "color": "#fff5f5",
-            "border-color": "#fff5f5"
-          },
-          "quantityDecrement": {
-            "color": "#fff5f5",
-            "border-color": "#fff5f5"
-          },
-          "quantityInput": {
-            "color": "#fff5f5",
-            "border-color": "#fff5f5"
-          }
-        }
-      }
-    },
+        function ShopifyBuyInit() {
+          var client = ShopifyBuy.buildClient({
+            domain: 'nbdysprfct.myshopify.com',
+            storefrontAccessToken: '1aa689fedcf3c4fde248521a32c1961e',
           });
-        });
-      }
-    })();
+          ShopifyBuy.UI.onReady(client).then(function (ui) {
+            ui.createComponent('collection', {
+              id: '156706603146',
+              node: document.getElementById('collection-component-1585453553555'),
+              moneyFormat: '%24%7B%7Bamount%7D%7D',
+              options: {
+                "product": {
+                  "styles": {
+                    "product": {
+                      "@media (min-width: 601px)": {
+                        "max-width": "calc(25% - 20px)",
+                        "margin-left": "20px",
+                        "margin-bottom": "50px",
+                        "width": "calc(25% - 20px)"
+                      },
+                      "img": {
+                        "height": "calc(100% - 15px)",
+                        "position": "absolute",
+                        "left": "0",
+                        "right": "0",
+                        "top": "0"
+                      },
+                      "imgWrapper": {
+                        "padding-top": "calc(75% + 15px)",
+                        "position": "relative",
+                        "height": "0"
+                      }
+                    },
+                    "title": {
+                      "font-family": "Arial, sans-serif",
+                      "font-weight": "normal",
+                      "color": "#000000"
+                    },
+                    "button": {
+                      "font-family": "Arial, sans-serif",
+                      ":hover": {
+                        "background-color": "#e62121"
+                      },
+                      "background-color": "#ff2525",
+                      ":focus": {
+                        "background-color": "#e62121"
+                      },
+                      "border-radius": "2px"
+                    },
+                    "price": {
+                      "color": "#898989"
+                    },
+                    "compareAt": {
+                      "color": "#898989"
+                    },
+                    "unitPrice": {
+                      "color": "#898989"
+                    }
+                  },
+                  "buttonDestination": "modal",
+                  "contents": {
+                    "options": false
+                  },
+                  "text": {
+                    "button": "View product"
+                  }
+                },
+                "productSet": {
+                  "styles": {
+                    "products": {
+                      "@media (min-width: 601px)": {
+                        "margin-left": "-20px"
+                      }
+                    }
+                  }
+                },
+                "modalProduct": {
+                  "contents": {
+                    "img": false,
+                    "imgWithCarousel": true,
+                    "button": false,
+                    "buttonWithQuantity": true
+                  },
+                  "styles": {
+                    "product": {
+                      "@media (min-width: 601px)": {
+                        "max-width": "100%",
+                        "margin-left": "0px",
+                        "margin-bottom": "0px"
+                      }
+                    },
+                    "button": {
+                      "font-family": "Arial, sans-serif",
+                      ":hover": {
+                        "background-color": "#e62121"
+                      },
+                      "background-color": "#ff2525",
+                      ":focus": {
+                        "background-color": "#e62121"
+                      },
+                      "border-radius": "2px"
+                    },
+                    "title": {
+                      "font-family": "Arial, sans-serif",
+                      "font-weight": "normal"
+                    },
+                    "price": {
+                      "font-family": "Arial, sans-serif"
+                    },
+                    "compareAt": {
+                      "font-family": "Arial, sans-serif"
+                    },
+                    "unitPrice": {
+                      "font-family": "Arial, sans-serif"
+                    },
+                    "description": {
+                      "font-family": "Arial, sans-serif"
+                    }
+                  }
+                },
+                "option": {
+                  "styles": {
+                    "label": {
+                      "font-family": "Arial, sans-serif"
+                    },
+                    "select": {
+                      "font-family": "Arial, sans-serif"
+                    }
+                  }
+                },
+                "cart": {
+                  "styles": {
+                    "button": {
+                      "font-family": "Arial, sans-serif",
+                      ":hover": {
+                        "background-color": "#e62121"
+                      },
+                      "background-color": "#ff2525",
+                      ":focus": {
+                        "background-color": "#e62121"
+                      },
+                      "border-radius": "2px"
+                    },
+                    "title": {
+                      "color": "#fff5f5"
+                    },
+                    "header": {
+                      "color": "#fff5f5"
+                    },
+                    "lineItems": {
+                      "color": "#fff5f5"
+                    },
+                    "subtotalText": {
+                      "color": "#fff5f5"
+                    },
+                    "subtotal": {
+                      "color": "#fff5f5"
+                    },
+                    "notice": {
+                      "color": "#fff5f5"
+                    },
+                    "currency": {
+                      "color": "#fff5f5"
+                    },
+                    "close": {
+                      "color": "#fff5f5",
+                      ":hover": {
+                        "color": "#fff5f5"
+                      }
+                    },
+                    "empty": {
+                      "color": "#fff5f5"
+                    },
+                    "noteDescription": {
+                      "color": "#fff5f5"
+                    },
+                    "discountText": {
+                      "color": "#fff5f5"
+                    },
+                    "discountIcon": {
+                      "fill": "#fff5f5"
+                    },
+                    "discountAmount": {
+                      "color": "#fff5f5"
+                    },
+                    "cart": {
+                      "background-color": "#000000"
+                    },
+                    "footer": {
+                      "background-color": "#000000"
+                    }
+                  },
+                  "text": {
+                    "title": "CART",
+                    "total": "Subtotal",
+                    "empty": "YOUR CART IS EMPTY"
+                  },
+                  "popup": false
+                },
+                "toggle": {
+                  "styles": {
+                    "toggle": {
+                      "font-family": "Arial, sans-serif",
+                      "background-color": "#ff2525",
+                      ":hover": {
+                        "background-color": "#e62121"
+                      },
+                      ":focus": {
+                        "background-color": "#e62121"
+                      }
+                    }
+                  }
+                },
+                "lineItem": {
+                  "styles": {
+                    "variantTitle": {
+                      "color": "#fff5f5"
+                    },
+                    "title": {
+                      "color": "#fff5f5"
+                    },
+                    "price": {
+                      "color": "#fff5f5"
+                    },
+                    "fullPrice": {
+                      "color": "#fff5f5"
+                    },
+                    "discount": {
+                      "color": "#fff5f5"
+                    },
+                    "discountIcon": {
+                      "fill": "#fff5f5"
+                    },
+                    "quantity": {
+                      "color": "#fff5f5"
+                    },
+                    "quantityIncrement": {
+                      "color": "#fff5f5",
+                      "border-color": "#fff5f5"
+                    },
+                    "quantityDecrement": {
+                      "color": "#fff5f5",
+                      "border-color": "#fff5f5"
+                    },
+                    "quantityInput": {
+                      "color": "#fff5f5",
+                      "border-color": "#fff5f5"
+                    }
+                  }
+                }
+              },
+            });
+          });
+        }
+      })();
     /*]]>*/
     </script>
+  </div>
+
+  <section class=lookbook id="LOOKBOOK" data-aos="fade-in">
+
+    <div class="row">
+      <br>
+      <h1>LOOKBOOK</h1>
+      <br>
+
+      <div class="column">
+        <a href="world_collec.html">
+          <img src="images/cover1.jpg" alt="The World Is Art Collection" style="width:100%">
+        </a>
+        <h2>THE WORLD IS ART COLLECTION</h2>
+      </div>
+      
+
+      <div class="column">
+        <a href="peace_collec.html">
+          <img src="images/cover2.jpg" alt="Peace Capsule Collection" style="width:100%">
+        </a>
+        <h2>PEACE CAPSULE COLLECTION</h2>
+      </div>
+
+
+      <div class="column">
+        <a href="unity_collec.html">
+          <img src="images/cover3.jpg" alt="Unity Collection" style="width:100%">
+        </a>
+        <h2>UNITY COLLECTION</h2>
+      </div>
+      
+
+      <div class="column">
+        <a href="rainbow_tee.html">
+          <img src="images/cover4.jpg" alt="Rainbow Ringer Tee" style="width:100%">
+        </a>
+        <h2>RAINBOW RINGER TEE</h2>
+      </div>
     </div>
+  </section>
 
-    <section class=lookbook id="LOOKBOOK" data-aos="fade-in">
+  <section id="MEDIA" class="media" data-aos="fade-in">
+    <h1>MEDIA</h1>
+    <marquee direction="left" behavior= "alternate" scrollamount="5" onmouseover="this.stop()" onmouseout="this.start()">
+      <iframe width="500" height="400" frameborder= "0" allowfullscreen= "true" src="https://www.youtube.com/embed/y9p4HEVf_iE"></iframe>
+      <iframe width="500" height="400" frameborder= "0" allowfullscreen= "true" src="https://www.youtube.com/embed/NwSBUj6crn4"></iframe>
+      <iframe width="500" height="400" frameborder= "0" allowfullscreen= "true" src="https://www.youtube.com/embed/DIthlb7THTM"></iframe>
+      <iframe width="500" height="400" frameborder= "0" allowfullscreen= "true" src="https://www.youtube.com/embed/_HQ2a0gsBH8"></iframe>
+      <iframe width="500" height="400" frameborder= "0" allowfullscreen= "true" src="https://www.youtube.com/embed/xLSupyakagE"></iframe>
+    </marquee>
 
-        <div class="row">
-            <br>
-            <h1>LOOKBOOK</h1>
+  </section>
 
-            <div class="column">
-                <a href="world_collec.html">
-                    <img src="images/cover1.jpg" alt="The World Is Art Collection" style="width:100%">
-                </a>
-                <h2>THE WORLD IS ART COLLECTION</h2>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 400,
+      duration: 1000
+    });
+  </script>
 
-            </div>
-            <div class="column">
-                <a href="peace_collec.html">
-                    <img src="images/cover2.jpg" alt="Peace Capsule Collection" style="width:100%">
-                </a>
-                <h2>PEACE CAPSULE COLLECTION</h2>
-            </div>
-            <div class="column">
-                <a href="unity_collec.html">
-                    <img src="images/cover3.jpg" alt="Unity Collection" style="width:100%">
-                </a>
-                <h2>UNITY COLLECTION</h2>
-            </div>
-            <div class="column">
-                <a href="rainbow_tee.html">
-                    <img src="images/cover4.jpg" alt="Rainbow Ringer Tee" style="width:100%">
-                </a>
-                <h2>RAINBOW RINGER TEE</h2>
-            </div>
-        </div>
-        <section>
+  <script>
+    (function ($) {
+      var $animation_elements = $('.et-waypoint'),
+        $window = $(window);
 
-            <section id="COMMUNITY" class="community" data-aos="fade-in">
-                <div class="row">
-                    <br>
-                    <h1>COMMUNITY</h1>
+      function check_if_in_view() {
+        var window_height = $window.height(),
+          window_top_position = $window.scrollTop(),
+          window_bottom_position = (window_top_position + window_height);
 
-                    <div class="column">
-                        <iframe width="800" height="600" src="https://www.youtube.com/embed/y9p4HEVf_iE">
-                        </iframe>
-                        <h2>PRODUCT OF LA | A POP UP</h2>
+        $animation_elements.each(function () {
+          var $element = $(this),
+            element_height = $element.outerHeight(),
+            element_top_position = $element.offset().top,
+            element_bottom_position = (element_top_position + element_height);
 
-                    </div>
-                    <div class="column">
-                        <iframe width="800" height="600" src="https://www.youtube.com/embed/NwSBUj6crn4">
-                        </iframe>
-                        <h2>SANTA ANA | A POP UP</h2>
+          //check to see if this element is within viewport
+          if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
+            $element.addClass('et-animated');
+          } else {
+            $element.removeClass('et-animated');
+          }
+        });
+      }
 
-                    </div>
-
-                    <div class="column">
-                        <iframe width="700" height="600" src="https://www.youtube.com/embed/DIthlb7THTM">
-                        </iframe>
-                        <h2>NOBODY'S PERFECT | A DOCUMENTARY</h2>
-
-                    </div>
-                    <div class="column">
-                        <iframe width="800" height="600" src="https://www.youtube.com/embed/_HQ2a0gsBH8">
-                        </iframe>
-                        <h2>NOBODY'S PERFECT | A SPOKEN WORD</h2>
-
-                    </div>
-
-                    <div class="column">
-                        <iframe width="800" height="600" src="https://www.youtube.com/embed/xLSupyakagE">
-                        </iframe>
-                        <h2>NOBODY'S PERFECT | A BTS</h2>
-
-                    </div>
-                </div>
-            </section>
-
-            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-            <script>
-                AOS.init({
-                    offset: 400,
-                    duration: 1000
-                });
-            </script>
-
-            <script>
-                (function ($) {
-                    var $animation_elements = $('.et-waypoint'),
-                        $window = $(window);
-
-                    function check_if_in_view() {
-                        var window_height = $window.height(),
-                            window_top_position = $window.scrollTop(),
-                            window_bottom_position = (window_top_position + window_height);
-
-                        $animation_elements.each(function () {
-                            var $element = $(this),
-                                element_height = $element.outerHeight(),
-                                element_top_position = $element.offset().top,
-                                element_bottom_position = (element_top_position + element_height);
-
-                            //check to see if this element is within viewport
-                            if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
-                                $element.addClass('et-animated');
-                            } else {
-                                $element.removeClass('et-animated');
-                            }
-                        });
-                    }
-
-                    $window.on('scroll resize', check_if_in_view);
-                })(jQuery);
-            </script>
+      $window.on('scroll resize', check_if_in_view);
+    })(jQuery);
+  </script>
 </body>
 
 <footer>
-    <div class="instagram">
-        <br>
-        <marquee behavior="scroll" direction="left">
-            <h2 align="right"> SHOP OUR INSTAGRAM @NBDYS.PRFCT ... SHOP OUR INSTAGRAM @NBDYS.PRFCT ... SHOP OUR
-                INSTAGRAM
-                @NBDYS.PRFCT ... SHOP OUR INSTAGRAM @NBDYS.PRFCT ... SHOP OUR INSTAGRAM @NBDYS.PRFCT ... SHOP
-                OUR
-                INSTAGRAM @NBDYS.PRFCT ... SHOP OUR INSTAGRAM @NBDYS.PRFCT ... SHOP OUR INSTAGRAM
-                @NBDYS.PRFCT ... SHOP OUR INSTAGRAM @NBDYS.PRFCT ... SHOP OUR INSTAGRAM @NBDYS.PRFCT ... </h2>
-        </marquee>
-    </div>
+ 
 
-    <a href="https://www.instagram.com/nbdys.prfct/"><i class="fa fa-instagram"></i></a>
-    <br>
-    <p>© 2020, NBDYSPRFCT Powered by Nobody's Perfect</p>
-    <i class="fa fa-cc-amex" style="font-size:24px"></i>
-    <i class="fa fa-cc-visa" style="font-size:24px"></i>
-    <i class="fab fa-cc-apple-pay" style="font-size:24px"></i>
-    <i class="fa fa-cc-discover" style="font-size:24px"></i>
-    <i class="fa fa-cc-jcb" style="font-size:24px"></i>
-    <i class="fa fa-cc-mastercard" style="font-size:24px"></i>
-    <i class="fa fa-cc-diners-club" style="font-size:24px"></i>
+  <a href="https://www.instagram.com/nbdys.prfct/"><i class="fa fa-instagram"></i></a>
+  <br>
+  <p>© 2020, NBDYSPRFCT Powered by Nobody's Perfect</p>
+  <i class="fa fa-cc-amex" style="font-size:24px"></i>
+  <i class="fa fa-cc-visa" style="font-size:24px"></i>
+  <i class="fab fa-cc-apple-pay" style="font-size:24px"></i>
+  <i class="fa fa-cc-discover" style="font-size:24px"></i>
+  <i class="fa fa-cc-jcb" style="font-size:24px"></i>
+  <i class="fa fa-cc-mastercard" style="font-size:24px"></i>
+  <i class="fa fa-cc-diners-club" style="font-size:24px"></i>
 
 </footer>
 
 <audio src="NP Song.wav" id="my_audio" loop="loop"></audio>
 <script type="text/javascript">
-    window.onclick = function () {
-        var audio = document.getElementById("my_audio");
-        audio.volume = 0.05;
-        audio.play();
-    }
+  window.onclick = function () {
+    var audio = document.getElementById("my_audio");
+    audio.volume = 0.05;
+    audio.play();
+  }
 </script>
 
 
