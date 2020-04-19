@@ -169,11 +169,11 @@ header button:hover{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     letter-spacing: 4px;
-    font-size: 3vw;
+    font-size: 4vw;
     text-decoration: line-through;
     text-decoration-color: black;
     background-color: black;
-    width: 320px;
+    width: 500px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -209,7 +209,7 @@ header button:hover{
     bottom: 20px;
     right: 0;
     z-index: 99;
-    font-size: 1.5vw;
+    font-size: 2vw;
     border: none;
     outline: none;
     background-color: black;
@@ -238,11 +238,11 @@ header button:hover{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     letter-spacing: 4px;
-    font-size: 3vw;
+    font-size: 4vw;
     text-decoration: line-through;
     text-decoration-color: black;
     background-color: black;
-    width: 320px;
+    width: 400px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -289,7 +289,7 @@ header button:hover{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     letter-spacing: 4px;
-    font-size: 3vw;
+    font-size: 4vw;
     text-decoration: line-through;
     text-decoration-color: black;
     background-color: black;
@@ -308,7 +308,7 @@ header button:hover{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     letter-spacing: 4px;
-    font-size: 3vw;
+    font-size: 4vw;
     text-decoration: line-through;
     text-decoration-color: black;
     background-color: black;
@@ -417,21 +417,23 @@ footer i{
 
 
 @media screen and (max-width: 850px){
+    
     nav{
         position: absolute;
         padding-top: 250px;
     }
     nav a{
-      font-size: 9vw;
+      font-size: 12vw;
       background-color: black;
       line-height: 170%;
 
     }
 
-    button{
+
+    header button{
         padding-top: 5px;
         padding-bottom: 5px;
-        font-size: 2.2vw;
+        font-size: 3.3vw;
     }
     
 
@@ -450,16 +452,16 @@ footer i{
     
     }
     .about h1{
-        font-size: 5vw;
+        font-size: 10vw;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
     .about h2{
-        font-size: 4vw;
+        font-size: 4.5vw;
     }
     .about p{
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
 
     .about img{
@@ -471,38 +473,52 @@ footer i{
         margin-bottom: 200px;
     }
     .shop h1{
-        font-size: 5vw;
+        font-size: 10vw;
     }
-    .shop h2{
-        font-size: 4vw;
-    }
+  
     .media {
         padding-top: 200px;
+        padding-bottom: 100px;
     }
     .lookbook h1{
-        font-size: 5vw;
+        font-size: 10vw;
     }
-    .lookbook h2{
-        font-size: 4vw;
-    }
+
     .lookbook .column {
         width: 50%;
     }
 
     .media h1{
-        font-size: 5vw;
+        font-size: 10vw;
     }
-    .media h2{
-        font-size: 4vw;
-    } 
+    .media iframe{
+        width: 350px;
+        height: 300px;
+    }
+
 
     #topbutton{
-        font-size: 3vw;
+        font-size: 6vw;
+    }
+
+    #backbutton{
+        font-size: 4.4vw;
     }
 
     .media .column{
         width: 100%;
     }
 
-
+    .WIA h2{
+        font-size: 7vw;
+    }
+    .PC h2{
+        font-size: 7vw;
+    }
+    .U h2{
+        font-size: 7vw;
+    }
+    .RR h2{
+        font-size: 7vw;
+    }
   }
