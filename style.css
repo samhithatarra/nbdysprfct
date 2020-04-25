@@ -467,11 +467,11 @@ footer i{
 
     }
     .body_nav1{
-        padding-left: 1vw;
+        padding-left: none;
     
     }
     .body_nav2{
-        padding-right: 1vw;
+        padding-right: none
     
     }
     #body_nav a{
@@ -500,7 +500,7 @@ footer i{
         font-size: 80px;
         z-index: 999;
         position: absolute;
-        bottom: 70px;
+        bottom: 50px;
         left: 0;
         color: snow;
         border: none;
