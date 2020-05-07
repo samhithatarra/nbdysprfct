@@ -1,166 +1,15 @@
 <!DOCTYPE html>
-<html>
-    
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nobody's Perfect - NBDYSPRFCT</title>
-    <link rel="shortcut icon" type="image/png" href="images/favicon_np.jpeg">
-    <meta property="og:site_name" content="Nobody's Perfect"/>
-    <meta property="og:title" content="Nobody's Perfect - NBDYSPRFCT"/>
-    <meta property="og:description" content="Cultivating a Community"/>
-    <meta property="og:image" content="images/np_logowhite.jpeg">
-
-    
-    <style>
-        /* Style to set the body alignment into center */
-        body {
-            text-align:center;
-            text-transform: uppercase;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: bold;
-            text-decoration: line-through;
-            text-decoration-color: snow;
-        }
-        h2{
-          color: rgba(255, 0, 0, 0.932);
-          font-size: 45px;
-        }
-        
-        /* Style to set the div style to display
-            countdown timer */
-        #countDownTimer{
-            font-family: Arial, Helvetica, sans-serif;
-            color: white;
-            display: inline-block;
-            font-size: 50px;
-            font-weight: bold;
-            text-align: center;
-        }
- 
-        #countDownTimer > div{
-            padding: 10px;
-            border-radius: 3px;
-            background: snow;
-            display: inline-block;
-        }
- 
-        #countDownTimer div > span {
-            background: rgba(255, 0, 0, 0.932);
-            display: inline-block;
-            padding: 20px;
-            border-radius: 5px;
-        }
- 
-        .timeText{
-            font-weight:bold;
-            padding-top: 5px;
-            font-size: 20px;
-            text-decoration: line-through;
-            text-decoration-color: snow;
-            color:black;
-        }
-    </style>
-</head>
- 
-<body>
-  <img src="images/np_logowhite.jpeg" alt="Nobody's Perfect Logo" width="200">
-    <h1>
-        Welcome to the Nobody's Perfect Community.
-        <br>
-        Site goes live in:
-    </h1>
-    <br>
-    
-    
-    
- 
-    <div id="countDownTimer">
-        <div>
-            <span id="days"></span>
-            <div class="timeText">Days</div>
-        </div>
-        
-        <div>
-            <span id="hours"></span>
-            <div class="timeText">Hours</div>
-        </div>
-        
-        <div>
-            <span id="minutes"></span>
-            <div class="timeText">Minutes</div>
-        </div>
-        
-        <div>
-            <span id="seconds"></span>
-            <div class="timeText">Seconds</div>
-        </div>
-    </div>
-    
-    <script>
-        
-        // Set the date and time for countdown timer
-        // in string format
-        var countDownDate = new Date("May 6, 2020 18:00:00").getTime();
- 
-        // Increase the count down timer
-        // with every 1 second
-        var x = setInterval(function() {
- 
-            // Get the current date and time
-            var currentTime = new Date().getTime();
-    
-            // Difference between current and given date
-            // in milliseconds
-            var timeDifference = countDownDate - currentTime;
-    
-            // The difference of time converted into days,
-            // hours, minutes and seconds
-            var days = Math.floor(timeDifference 
-                            / (1000 * 60 * 60 * 24));
- 
-            var hours = Math.floor((timeDifference % 
-                   (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
- 
-            var minutes = Math.floor((timeDifference %
-                       (1000 * 60 * 60)) / (1000 * 60));
- 
-            var seconds = Math.floor((timeDifference %
-                            (1000 * 60)) / 1000);
-    
-            // Display the output
-            document.getElementById("days").innerHTML = days;
-            document.getElementById("hours").innerHTML = hours;
-            document.getElementById("minutes").innerHTML = minutes;
-            document.getElementById("seconds").innerHTML = seconds;
-    
-            // If the count down is over, write some text 
-            if (timeDifference < 0) {
-                clearInterval(x);
-                document.getElementById("countDownTimer").innerHTML
-                                = "Countdown Timer Ended!";
-            }
-        }, 1000);
-    </script>   
-    
-    <h2>Nobody's Perfect and that's perfectly fine.</h2>
-</body>
- 
-</html>
-<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta property="og:site_name" content="Nobody's Perfect"/>
-  <meta property="og:title" content="Nobody's Perfect - NBDYSPRFCT"/>
-  <meta property="og:description" content="Cultivating a Community"/>
+  <meta property="og:site_name" content="Nobody's Perfect" />
+  <meta property="og:title" content="Nobody's Perfect - NBDYSPRFCT" />
+  <meta property="og:description" content="Cultivating a Community" />
   <meta property="og:image" content="images/np_logowhite.jpeg">
   <title>Nobody's Perfect - NBDYSPRFCT</title>
-  <script src="script.js"></script>
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="style.css?ver=100">
@@ -192,7 +41,6 @@
   <br>
   <a href="#MEDIA">MEDIA</a>
   <br>
-
 
 
 </nav>
@@ -269,9 +117,6 @@
 
   </section>
   <div class="about" id="ABOUT US" data-aos="fade-in">
-
-
-
 
 
     <h1>ABOUT US</h1>
@@ -728,4 +573,4 @@
 </script>
 
 
-</html> -->
+</html>
