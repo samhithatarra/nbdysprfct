@@ -19,118 +19,359 @@
 
 
 <header>
-  <button onclick="document.getElementById('my_audio').muted = !document.getElementById('my_audio').muted">MUTE /
-    UNMUTE</button>
-  <a href="index.html">
-    <img src="images/np_logo.png" width="250" height="auto" alt="Nobody's Perfect Logo">
 
-  </a>
+  <nav>
+    
+    <div class="body_nav1" id="body_nav">
+      <a href="about.html">ABOUT</a>
+      <a href="#collection-component-1618012940501">SHOP</a>
+      <a href="collection.html">WORLD IS Y(OURS)</a>
+    </div>
+    <a href="index.html">
+      <img src="images/np_logo.png" width="70px" height="auto" alt="Nobody's Perfect Logo">
+    </a>
+    <div class="body_nav2" id="body_nav">
+      <p>FREE SHIPPING ON ALL ORDERS</p>
+    </div>
 
+  </nav>
 
 
 </header>
 
 
-<nav>
 
-  <a href="#BODYHEADER">ABOUT US</a>
-  <br>
-  <a href="#SHOP">SHOP</a>
-  <br>
-  <a href="#LOOKBOOK">LOOKBOOK</a>
-  <br>
-  <a href="#MEDIA">MEDIA</a>
-  <br>
-
-
-</nav>
 
 
 
 
 <body>
 
-  <div class="slideshow">
-    <picture class="mySlides">
-      <source media="(min-width: 850px)" srcset="images/slideshow4.jpg">
-      <source media="(max-width: 850px)" srcset="images/SSmobile4.jpg">
-      <img src="images/slideshow4.jpg">
+  <div class="cover">
+    <picture>
+      <!-- <source media="(min-width: 850px)" srcset="images/slideshow4.jpg">
+      <source media="(max-width: 850px)" srcset="images/SSmobile4.jpg"> -->
+        <source media="(max-width: 850px)" srcset="images/coverMobile.jpeg">
+        <img src="images/cover.jpeg">
     </picture>
-    <picture class="mySlides">
-      <source media="(min-width: 850px)" srcset="images/slideshow2.jpg">
-      <source media="(max-width: 850px)" srcset="images/SSmobile2.jpg">
-      <img src="images/slideshow2.jpg">
-    </picture>
-    <picture class="mySlides">
-      <source media="(min-width: 850px)" srcset="images/slideshow5.jpg">
-      <source media="(max-width: 850px)" srcset="images/SSmobile5.jpg">
-      <img src="images/slideshow5.jpg">
-    </picture>
-    <picture class="mySlides">
-      <source media="(min-width: 850px)" srcset="images/slideshow3.jpg">
-      <source media="(max-width: 850px)" srcset="images/SSmobile3.jpg">
-      <img src="images/slideshow3.jpg">
-    </picture>
-    <picture class="mySlides">
-      <source media="(min-width: 850px)" srcset="images/slideshow1.jpeg">
-      <source media="(max-width: 850px)" srcset="images/SSmobile1.jpg">
-      <img src="images/slideshow1.jpeg">
-    </picture>
-    <a href="#BODYHEADER"><i class="fa fa-chevron-down"></i></a>
+  
+    <a href="#collection-component-1618012940501">SHOP NOW</a>
 
   </div>
 
-  <script>
-    var myIndex = 0;
-    carousel();
+  
 
-
-    function carousel() {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      myIndex++;
-      if (myIndex > x.length) { myIndex = 1 }
-      x[myIndex - 1].style.display = "block";
-      setTimeout(carousel, 4000); // Change image every 2 seconds
+  <div id='collection-component-1618012940501'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
     }
-  </script>
-
-  <section class="body_header" id="BODYHEADER">
-    <button onclick="document.getElementById('my_audio').muted = !document.getElementById('my_audio').muted">MUTE /
-      UNMUTE</button>
-
-
-    <div class="body_nav1" id="body_nav">
-      <a href="#ABOUT US">ABOUT US</a>
-      <a href="#SHOP">SHOP</a>
-    </div>
-    <a href="index.html">
-      <img src="images/np_logo.png" width="100px" height="auto" alt="Nobody's Perfect Logo">
-    </a>
-    <div class="body_nav2" id="body_nav">
-      <a href="#LOOKBOOK">LOOKBOOK</a>
-      <a href="#MEDIA">MEDIA</a>
-    </div>
-
-  </section>
-  <div class="about" id="ABOUT US" data-aos="fade-in">
-
-
-    <h1>ABOUT US</h1>
-    <br>
-
-    <p>Everyone has problems, insecurities, unique experiences,
-      <br><br> and difficulties in their lives that ultimately <br><br>shape who
-      they are as a person. With this in mind, <br><br>we aim to change
-      the way people think about their <br><br>lives in comparison to others and
-      to bring <br><br>people closer together with all mediums of art. <br> <br> We are
-      going to spread a message that is universal: <br> <br></p>
-
-    <h2>nobody is perfect and that’s perfectly fine.</h2>
-  </div>
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'nbdysprfct.myshopify.com',
+      storefrontAccessToken: '1aa689fedcf3c4fde248521a32c1961e',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('collection', {
+        id: '184822169738',
+        node: document.getElementById('collection-component-1618012940501'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px",
+          "width": "calc(25% - 20px)"
+        },
+        "img": {
+          "height": "calc(100% - 15px)",
+          "position": "absolute",
+          "left": "0",
+          "right": "0",
+          "top": "0"
+        },
+        "imgWrapper": {
+          "padding-top": "calc(75% + 15px)",
+          "position": "relative",
+          "height": "0"
+        }
+      },
+      "title": {
+        "font-size": "14px",
+        "color": "#000000"
+      },
+      "button": {
+        "font-weight": "bold",
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px",
+        ":hover": {
+          "background-color": "#1b0707"
+        },
+        "background-color": "#100404",
+        ":focus": {
+          "background-color": "#1b0707"
+        },
+        "border-radius": "0px",
+        "padding-left": "61px",
+        "padding-right": "61px"
+      },
+      "quantityInput": {
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px"
+      },
+      "price": {
+        "color": "#898989"
+      },
+      "compareAt": {
+        "color": "#898989"
+      },
+      "unitPrice": {
+        "color": "#898989"
+      }
+    },
+    "contents": {
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-weight": "bold",
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px",
+        ":hover": {
+          "background-color": "#1b0707"
+        },
+        "background-color": "#100404",
+        ":focus": {
+          "background-color": "#1b0707"
+        },
+        "border-radius": "0px",
+        "padding-left": "61px",
+        "padding-right": "61px"
+      },
+      "quantityInput": {
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px"
+      },
+      "title": {
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "bold",
+        "font-size": "26px",
+        "color": "#000000"
+      },
+      "price": {
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "normal",
+        "font-size": "17px",
+        "color": "#4c4c4c"
+      },
+      "compareAt": {
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "normal",
+        "font-size": "14.45px",
+        "color": "#4c4c4c"
+      },
+      "unitPrice": {
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "normal",
+        "font-size": "14.45px",
+        "color": "#4c4c4c"
+      }
+    }
+  },
+  "modal": {
+    "styles": {
+      "modal": {
+        "background-color": "#fffafa"
+      }
+    }
+  },
+  "option": {},
+  "cart": {
+    "styles": {
+      "button": {
+        "font-weight": "bold",
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px",
+        ":hover": {
+          "background-color": "#1b0707"
+        },
+        "background-color": "#100404",
+        ":focus": {
+          "background-color": "#1b0707"
+        },
+        "border-radius": "0px"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "header": {
+        "color": "#000000"
+      },
+      "lineItems": {
+        "color": "#000000"
+      },
+      "subtotalText": {
+        "color": "#000000"
+      },
+      "subtotal": {
+        "color": "#000000"
+      },
+      "notice": {
+        "color": "#000000"
+      },
+      "currency": {
+        "color": "#000000"
+      },
+      "close": {
+        "color": "#000000",
+        ":hover": {
+          "color": "#000000"
+        }
+      },
+      "empty": {
+        "color": "#000000"
+      },
+      "noteDescription": {
+        "color": "#000000"
+      },
+      "discountText": {
+        "color": "#000000"
+      },
+      "discountIcon": {
+        "fill": "#000000"
+      },
+      "discountAmount": {
+        "color": "#000000"
+      },
+      "cart": {
+        "background-color": "#fffafa"
+      },
+      "footer": {
+        "background-color": "#fffafa"
+      }
+    },
+    "text": {
+      "title": "CART",
+      "total": "Subtotal",
+      "empty": "YOUR CART IS EMPTY"
+    },
+    "popup": false
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-weight": "bold",
+        "background-color": "#100404",
+        ":hover": {
+          "background-color": "#1b0707"
+        },
+        ":focus": {
+          "background-color": "#1b0707"
+        }
+      },
+      "count": {
+        "font-size": "13px"
+      }
+    }
+  },
+  "lineItem": {
+    "styles": {
+      "variantTitle": {
+        "color": "#000000"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "price": {
+        "color": "#000000"
+      },
+      "fullPrice": {
+        "color": "#000000"
+      },
+      "discount": {
+        "color": "#000000"
+      },
+      "discountIcon": {
+        "fill": "#000000"
+      },
+      "quantity": {
+        "color": "#000000"
+      },
+      "quantityIncrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityDecrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityInput": {
+        "color": "#000000",
+        "border-color": "#000000"
+      }
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+  
+  
   <button onclick="topFunction()" id="topbutton" title="Go to top">TOP</button>
   <script>
 
@@ -152,427 +393,47 @@
 
 
 
-  <div class=shop id='SHOP' data-aos="fade-in">
-    <h1>SHOP</h1>
-
-    <br>
-    <h2 style="font-family: Arial, Helvetica, sans-serif; text-align: center; font-size: 3vw; color: rgba(255, 0, 0, 0.932); text-decoration: line-through; text-decoration-color: snow;">NEW RELEASE COMING SOON...</h2>
-
-    <!-- <div id='collection-component-1588558382044'></div> -->
-    <!-- <script type="text/javascript">
-      /*<![CDATA[*/
-      (function () {
-        var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-        if (window.ShopifyBuy) {
-          if (window.ShopifyBuy.UI) {
-            ShopifyBuyInit();
-          } else {
-            loadScript();
-          }
-        } else {
-          loadScript();
-        }
-        function loadScript() {
-          var script = document.createElement('script');
-          script.async = true;
-          script.src = scriptURL;
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-          script.onload = ShopifyBuyInit;
-        }
-        function ShopifyBuyInit() {
-          var client = ShopifyBuy.buildClient({
-            domain: 'nbdysprfct.myshopify.com',
-            storefrontAccessToken: '1aa689fedcf3c4fde248521a32c1961e',
-          });
-          ShopifyBuy.UI.onReady(client).then(function (ui) {
-            ui.createComponent('collection', {
-              id: '184822169738',
-              node: document.getElementById('collection-component-1588558382044'),
-              moneyFormat: '%24%7B%7Bamount%7D%7D',
-              options: {
-                "product": {
-                  "styles": {
-                    "product": {
-                      "@media (min-width: 601px)": {
-                        "max-width": "calc(33.33333% - 30px)",
-                        "margin-left": "30px",
-                        "margin-bottom": "50px",
-                        "width": "calc(33.33333% - 30px)"
-                      },
-                      "img": {
-                        "height": "calc(100% - 15px)",
-                        "position": "absolute",
-                        "left": "0",
-                        "right": "0",
-                        "top": "0"
-                      },
-                      "imgWrapper": {
-                        "padding-top": "calc(75% + 15px)",
-                        "position": "relative",
-                        "height": "0"
-                      }
-                    },
-                    "title": {
-                      "color": "#000000"
-                    },
-                    "button": {
-                      "font-weight": "bold",
-                      "font-size": "14px",
-                      "padding-top": "15px",
-                      "padding-bottom": "15px",
-                      ":hover": {
-                        "background-color": "#dc3c3c"
-                      },
-                      "background-color": "#f44343",
-                      ":focus": {
-                        "background-color": "#dc3c3c"
-                      },
-                      "border-radius": "0px",
-                      "padding-left": "61px",
-                      "padding-right": "61px"
-                    },
-                    "quantityInput": {
-                      "font-size": "14px",
-                      "padding-top": "15px",
-                      "padding-bottom": "15px"
-                    },
-                    "price": {
-                      "font-size": "16px",
-                      "color": "#898989"
-                    },
-                    "compareAt": {
-                      "font-size": "13.6px",
-                      "color": "#898989"
-                    },
-                    "unitPrice": {
-                      "font-size": "13.6px",
-                      "color": "#898989"
-                    }
-                  },
-                  "buttonDestination": "modal",
-                  "contents": {
-                    "options": false
-                  },
-                  "text": {
-                    "button": "VIEW PRODUCT"
-                  }
-                },
-                "productSet": {
-                  "styles": {
-                    "products": {
-                      "@media (min-width: 601px)": {
-                        "margin-left": "-30px"
-                      }
-                    }
-                  }
-                },
-                "modalProduct": {
-                  "contents": {
-                    "img": false,
-                    "imgWithCarousel": true,
-                    "button": false,
-                    "buttonWithQuantity": true
-                  },
-                  "styles": {
-                    "product": {
-                      "@media (min-width: 601px)": {
-                        "max-width": "100%",
-                        "margin-left": "0px",
-                        "margin-bottom": "0px"
-                      }
-                    },
-                    "button": {
-                      "font-weight": "bold",
-                      "font-size": "14px",
-                      "padding-top": "15px",
-                      "padding-bottom": "15px",
-                      ":hover": {
-                        "background-color": "#dc3c3c"
-                      },
-                      "background-color": "#f44343",
-                      ":focus": {
-                        "background-color": "#dc3c3c"
-                      },
-                      "border-radius": "0px",
-                      "padding-left": "61px",
-                      "padding-right": "61px"
-                    },
-                    "quantityInput": {
-                      "font-size": "14px",
-                      "padding-top": "15px",
-                      "padding-bottom": "15px"
-                    },
-                    "title": {
-                      "color": "#000000"
-                    }
-                  }
-                },
-                "modal": {
-                  "styles": {
-                    "modal": {
-                      "background-color": "#fffafa"
-                    }
-                  }
-                },
-                "cart": {
-                  "styles": {
-                    "button": {
-                      "font-weight": "bold",
-                      "font-size": "14px",
-                      "padding-top": "15px",
-                      "padding-bottom": "15px",
-                      ":hover": {
-                        "background-color": "#dc3c3c"
-                      },
-                      "background-color": "#f44343",
-                      ":focus": {
-                        "background-color": "#dc3c3c"
-                      },
-                      "border-radius": "0px"
-                    },
-                    "title": {
-                      "color": "#000000"
-                    },
-                    "header": {
-                      "color": "#000000"
-                    },
-                    "lineItems": {
-                      "color": "#000000"
-                    },
-                    "subtotalText": {
-                      "color": "#000000"
-                    },
-                    "subtotal": {
-                      "color": "#000000"
-                    },
-                    "notice": {
-                      "color": "#000000"
-                    },
-                    "currency": {
-                      "color": "#000000"
-                    },
-                    "close": {
-                      "color": "#000000",
-                      ":hover": {
-                        "color": "#000000"
-                      }
-                    },
-                    "empty": {
-                      "color": "#000000"
-                    },
-                    "noteDescription": {
-                      "color": "#000000"
-                    },
-                    "discountText": {
-                      "color": "#000000"
-                    },
-                    "discountIcon": {
-                      "fill": "#000000"
-                    },
-                    "discountAmount": {
-                      "color": "#000000"
-                    },
-                    "cart": {
-                      "background-color": "#fffafa"
-                    },
-                    "footer": {
-                      "background-color": "#fffafa"
-                    }
-                  },
-                  "text": {
-                    "title": "CART",
-                    "total": "Subtotal",
-                    "empty": "YOUR CART IS EMPTY"
-                  },
-                  "popup": false
-                },
-                "toggle": {
-                  "styles": {
-                    "toggle": {
-                      "font-weight": "bold",
-                      "background-color": "#f44343",
-                      ":hover": {
-                        "background-color": "#dc3c3c"
-                      },
-                      ":focus": {
-                        "background-color": "#dc3c3c"
-                      }
-                    },
-                    "count": {
-                      "font-size": "14px"
-                    }
-                  }
-                },
-                "lineItem": {
-                  "styles": {
-                    "variantTitle": {
-                      "color": "#000000"
-                    },
-                    "title": {
-                      "color": "#000000"
-                    },
-                    "price": {
-                      "color": "#000000"
-                    },
-                    "fullPrice": {
-                      "color": "#000000"
-                    },
-                    "discount": {
-                      "color": "#000000"
-                    },
-                    "discountIcon": {
-                      "fill": "#000000"
-                    },
-                    "quantity": {
-                      "color": "#000000"
-                    },
-                    "quantityIncrement": {
-                      "color": "#000000",
-                      "border-color": "#000000"
-                    },
-                    "quantityDecrement": {
-                      "color": "#000000",
-                      "border-color": "#000000"
-                    },
-                    "quantityInput": {
-                      "color": "#000000",
-                      "border-color": "#000000"
-                    }
-                  }
-                }
-              },
-            });
-          });
-        }
-      })();
-    /*]]>*/
-    </script> -->
-  </div>
-
-  <section class=lookbook id="LOOKBOOK" data-aos="fade-in">
+  <section class=lookbook id="LOOKBOOK">
 
     <div class="row">
-      <br>
-      <h1>LOOKBOOK</h1>
-      <br>
 
       <div class="column">
-        <a href="world_collec.html">
-          <img src="images/cover1.jpg" alt="The World Is Art Collection" style="width:100%">
+        <a href="about.html">
+          <img src="images/about.jpeg" alt="About" style="width:100%">
         </a>
-        <h2>THE WORLD IS ART COLLECTION</h2>
+        <button><a href="about.html"> ABOUT US</a></button>
+        
       </div>
 
 
       <div class="column">
-        <a href="peace_collec.html">
-          <img src="images/cover2.jpg" alt="Peace Capsule Collection" style="width:100%">
+        <a href="collection.html">
+          <img src="images/WIY.jpeg" alt="World is Yours Collection" style="width:100%">
         </a>
-        <h2>PEACE CAPSULE COLLECTION</h2>
-      </div>
 
-
-      <div class="column">
-        <a href="unity_collec.html">
-          <img src="images/cover3.jpg" alt="Unity Collection" style="width:100%">
-        </a>
-        <h2>UNITY COLLECTION</h2>
-      </div>
-
-
-      <div class="column">
-        <a href="rainbow_tee.html">
-          <img src="images/cover4.jpg" alt="Rainbow Ringer Tee" style="width:100%">
-        </a>
-        <h2>RAINBOW RINGER TEE</h2>
+        <button><a href="collection.html"> WORLD IS Y(OURS)</a></button>
       </div>
     </div>
   </section>
 
-  <section id="MEDIA" class="media" data-aos="fade-in">
-    <h1>MEDIA</h1>
-    <br>
-
-    <marquee direction="left" behavior="alternate" scrollamount="5" onmouseover="this.stop()" onmouseout="this.start()">
-      <iframe class="slide" width="500" height="400" frameborder="0" allowfullscreen="true"
-        src="https://www.youtube.com/embed/y9p4HEVf_iE"></iframe>
-      <iframe class="slide" width="500" height="400" frameborder="0" allowfullscreen="true"
-        src="https://www.youtube.com/embed/NwSBUj6crn4"></iframe>
-      <iframe class="slide" width="500" height="400" frameborder="0" allowfullscreen="true"
-        src="https://www.youtube.com/embed/DIthlb7THTM"></iframe>
-      <iframe class="slide" width="500" height="400" frameborder="0" allowfullscreen="true"
-        src="https://www.youtube.com/embed/_HQ2a0gsBH8"></iframe>
-      <iframe class="slide" width="500" height="400" frameborder="0" allowfullscreen="true"
-        src="https://www.youtube.com/embed/xLSupyakagE"></iframe>
-    </marquee>
-
-  </section>
 
 
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      offset: 400,
-      duration: 1000
-    });
-  </script>
 
-  <script>
-    (function ($) {
-      var $animation_elements = $('.et-waypoint'),
-        $window = $(window);
-
-      function check_if_in_view() {
-        var window_height = $window.height(),
-          window_top_position = $window.scrollTop(),
-          window_bottom_position = (window_top_position + window_height);
-
-        $animation_elements.each(function () {
-          var $element = $(this),
-            element_height = $element.outerHeight(),
-            element_top_position = $element.offset().top,
-            element_bottom_position = (element_top_position + element_height);
-
-          //check to see if this element is within viewport
-          if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
-            $element.addClass('et-animated');
-          } else {
-            $element.removeClass('et-animated');
-          }
-        });
-      }
-
-      $window.on('scroll resize', check_if_in_view);
-    })(jQuery);
-  </script>
 </body>
 
 <footer>
-
-  <a href="https://www.instagram.com/nbdys.prfct/" target="_blank"><i class="fa fa-instagram"
-      style="font-size:30px"></i></a>
+  <a href="about.html" >ABOUT</a>
   <br>
-  <p>© 2020 POWERED BY NOBODY'S PERFECT</p>
-  <p style="font-size: 10px;"><a href="https://www.samhithatarra.com/" target="_blank">SITE CREATED BY SAMHITHA
+  <br>
+  <a href="https://www.instagram.com/nbdys.prfct/" target="_blank">INSTAGRAM</a>
+  <br>
+  <br>
+  <p >© 2021 POWERED BY NOBODY'S PERFECT</p>
+  <p><a href="https://www.samhithatarra.com/" target="_blank">SITE CREATED BY SAMHITHA
       TARRA</a></p>
-  <i class="fa fa-cc-amex"></i>
-  <i class="fa fa-cc-visa"></i>
-  <i class="fab fa-cc-apple-pay"></i>
-  <i class="fa fa-cc-discover"></i>
-  <i class="fa fa-cc-jcb"></i>
-  <i class="fa fa-cc-mastercard"></i>
-  <i class="fa fa-cc-diners-club"></i>
 
 </footer>
 
-<audio src="NP Song.wav" id="my_audio" loop="loop"></audio>
-<script type="text/javascript">
-  window.onclick = function () {
-    var audio = document.getElementById("my_audio");
-    audio.volume = 0.05;
-    audio.play();
-  }
-</script>
 
 
 </html>

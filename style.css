@@ -13,69 +13,59 @@ header{
     z-index: 999;
     left: 0;
     right: 0;
-    position: absolute;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     clear: both;
-    height: 100px;
     text-align: center;
+    
 
 }
 
 nav{
-    
-    z-index: 999;
-    position: absolute;
-    text-align: left;
-    padding-top: 150px;
-    font-size: 1.3vw;
-    display: block;  
-        
-}
-nav a:hover{
-    text-decoration-color: rgba(255, 0, 0, 0.932);
-    
-}
-nav a{
-    line-height: 170%;
-    text-decoration: none;
-    font-size: 5vw;
-    color:black;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: line-through;
-    text-decoration-color: snow;
-    font-weight: bold;
+    text-align: center;
     background-color: snow;
-
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    border-style: none none solid none;
 }
+ 
 
-.body_nav1{
+nav .body_nav1{
     text-align: center;
     float: left;
-    padding-top: 50px; 
-    padding-left: 25vw;
+    padding-top: 20px; 
+    padding-left: 1vw;
+
 
 }
-.body_nav2{
+nav .body_nav2{
     text-align: center;
     text-align: center;
     float: right;
-    padding-top: 50px; 
-    padding-right: 25vw;
+    padding-top: 16px; 
+    padding-right: 3vw;
 
 }
-#body_nav a{
+nav #body_nav a{
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
-    font-weight: bold;
-    padding: 1vw;
-    font-size: 1.4vw;
-    text-decoration: line-through;
-    text-decoration-color: snow;
-
+    padding: 0.5vw;
+    font-size: 0.7vw;
 
 }
-#body_nav a:hover{
-    text-decoration-color: rgba(255, 0, 0, 0.932);
+nav p{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 0.7vw;
+
+}
+nav #body_nav a:hover{
+    text-decoration: underline;
 }
 
 body{
@@ -87,117 +77,49 @@ body{
 
 }
 
-header button{
-    position: absolute;
-    right: 0;
-    z-index: 1000;
-    font-size: 1.4vw;
-    border: none;
-    outline: none;
-    background-color:transparent;
-    color: black;
-    border-radius: 1px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 0px;
-    padding-right: 0px;
-    font-weight: bolder;
-    cursor: pointer;
-
-}
-header button:hover{
-    text-decoration: line-through;
-    text-decoration-color: rgba(255, 0, 0, 0.932);
-
-}
 
 
-.slideshow{
+
+.cover{
     top: 0;
     position: relative;
     /* padding-bottom: 200px; */
 }
-.slideshow img{
+.cover img{
         max-width: 100%;
-        height: auto;
-        opacity: 0.8;
+        max-height: auto;
+
         font-size: 0; 
          
     
 }
-.slideshow a{
-    color:snow;
-    font-size: 1.3vw;
-    font-family: Arial, Helvetica, sans-serif
-    
+.cover img:hover{
+    opacity: 0.8;
 }
-.slideshow i:hover{
-    color: rgba(255, 0, 0, 0.932);
 
-}
-.slideshow i{
-    font-size: 6vw;
-    z-index: 999;
+
+.cover a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 1vw;
+    background-color: black;
+    border: 2px solid snow;
+    padding: 14px 16px;
+    z-index: 998;
     position: absolute;
     bottom: 70px;
-    left: 0;
+    left: 30px;
     color: snow;
-    border: none;
-
-}
-.body_header{
-    text-align: center;
-    background-color: snow;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-}
-.body_header button{
-    position: absolute;
-    right: 0;
-    font-size: 1.4vw;
-    border: none;
-    outline: none;
-    background-color:transparent;
-    color: black;
-    border-radius: 1px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-weight: bolder;
-    text-decoration: none;
-    cursor: pointer;
-
-}
-.body_header button:hover{
-    text-decoration: line-through;
-    text-decoration-color: rgba(255, 0, 0, 0.932);
 
 }
 
-.loader{
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.loader >video{
-    width: 250px;
+.cover a:hover{
+    color: rgba(255, 0, 0, 0.932);
+    opacity: 0.8;
 }
 
-.loader.hidden{
-    animation: fadeOut 1s;
-    animation-fill-mode: forwards;
-}
+ 
+
 @keyframes fadeOut{
     100% {
         opacity: 0;
@@ -205,62 +127,32 @@ header button:hover{
     }
 }
 
-.about{
-    max-width: 100%;
-}
-.about.show{
-    opacity: 1;
-}
-
-
-
-.about h1{
-    
-    text-align: center;
+.about p{
+    padding-top: 100px;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    letter-spacing: 4px;
-    font-size: 4vw;
-    text-decoration: line-through;
-    text-decoration-color: rgba(255, 0, 0, 0.932);
-    background-color: snow;
-    color: black;
-    
+    font-size: 1vw;
+    text-transform: uppercase;
+    text-align: center;
 }
 .about h2{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgba(255, 0, 0, 0.932);
-    text-transform: uppercase;
-    font-weight: bolder;
-    font-size: 2.5vw;
-    text-decoration: line-through;
-    text-decoration-color: snow;
-    padding-bottom: 200px;
     
+    text-align: center;
+    padding-bottom: 100px;
 }
 
-.about p{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 1.2vw;
-    color: black;
-  
-}
+
 #topbutton {
     display: none;
     position: fixed;
     bottom: 20px;
     right: 0;
     z-index: 99;
-    font-size: 2vw;
-    border: none;
+    font-size: 1vw;
+    border: 2px solid snow;
     outline: none;
-    background-color: transparent;
-    color: black;
+    background-color: black;
+    padding: 14px 16px;
+    color: snow;
     cursor: pointer;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -271,32 +163,19 @@ header button:hover{
   }
   
   #topbutton:hover {
-    text-decoration: line-through;
-    text-decoration-color: rgb(255, 0, 0.932);
+    color: rgb(255, 0, 0.932);
   }
 
 .lookbook{
-    padding-bottom: 200px;
+    padding-bottom: 100px;
 }
 
-.lookbook h1{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    letter-spacing: 4px;
-    font-size: 4vw;
-    text-decoration: line-through;
-    text-decoration-color: rgba(255, 0, 0, 0.932);
-    background-color: snow;
-    color: black;
-    
-}
 
 .lookbook .column {
     float: left;
-    width: 25%;
-    padding: 5px;
-    opacity: 0.9;
+    width: 50%;
+    padding: 3px;
+    position: relative;
     text-align: center;
     color: snow;
     font-family: Arial, Helvetica, sans-serif;
@@ -304,10 +183,13 @@ header button:hover{
 
 
 .lookbook .column:hover {
-    background-color: rgba(255, 0, 0, 0.932);
+    opacity: 0.9;
 }
 
-
+.lookbook a{
+    color: snow;
+    text-decoration: none;
+}
 
 .lookbook .row{
     clear: both;
@@ -319,40 +201,21 @@ header button:hover{
     display: table;
 }
 
-.shop{
-    clear: both;
-    padding-bottom: 200px;
-}
-
-.shop h1{
-    text-align: center;
+ .lookbook button {
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    letter-spacing: 4px;
-    font-size: 4vw;
-    text-decoration: line-through;
-    text-decoration-color: rgba(255, 0, 0, 0.932);
-    background-color: snow;
-    color: black;
-    
+    text-decoration: none;
+    font-size: 1vw;
+    background-color: black;
+    border: 2px solid snow;
+    padding: 14px 16px;
+    z-index: 998;
+    position: absolute;
+    bottom: 60px;
+    left: 20px;
+    color: snow;
+
 }
 
-
-.media {
-    padding-bottom: 300px;
-}
-
-.media h1{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    letter-spacing: 4px;
-    font-size: 4vw;
-    text-decoration: line-through;
-    text-decoration-color: rgba(255, 0, 0, 0.932);
-    background-color: snow;
-    color: black;
-}
 
 
 
@@ -360,155 +223,77 @@ footer{
     bottom: 0;
     clear: both;
     background-color: snow;
-    text-align: center;
+    text-align: left;
     padding-top: 40px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    border-style: solid none none none;
+
 
 }
 
 footer p{
-    font-size: 15px;
-    text-align: center;
+    font-size: 0.8vw;
+    text-align: left;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-decoration: line-through;
-    text-decoration-color: snow;
+
 
 }
-footer h2{
-    font-weight: lighter;
-    padding-right:20%;
-}
+
 
 footer a{
-    font-size: 10px;
-    text-align: center;
+    font-size: 0.8vw;
+    text-align: left;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-decoration: line-through;
-    text-decoration-color: snow;
+    text-decoration: none;
 
 }
 
-footer i{
-    padding-left: 20px;
-    padding-right: 20px;
-    color: black;
 
-}
 
-.display_cart div#collection-component-1588558382044 {
+.display_cart div#collection-component-1618012940501 {
     display: none;
  }
 
 
-.WIA{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgba(255, 0, 0, 0.932);
-    letter-spacing: 1px;
-    text-decoration: line-through;
-    text-decoration-color: snow;
-    font-size: 2vw;
-}
-
-.PC{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgba(255, 0, 0, 0.932);
-    letter-spacing: 1px;
-    text-decoration: line-through;
-    text-decoration-color: snow;
-    font-size: 2vw;
-}
-
-.U{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgba(255, 0, 0, 0.932);
-    letter-spacing: 1px;
-    text-decoration: line-through;
-    text-decoration-color: snow;
-    font-size: 2vw;
-}
-
-.RR{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgba(255, 0, 0, 0.932);
-    letter-spacing: 1px;
-    text-decoration: line-through;
-    text-decoration-color: snow;
-    font-size: 2vw;
-}
-#backbutton{
-    left: 0;
-    
-}
 
 
 
 
 @media screen and (max-width: 850px){
+
     html{
         scroll-behavior: smooth;
     }
-    
-    nav{
-        position: absolute;
-        padding-top: 200px;
-    }
-    nav a{
-      font-size: 12vw;
-      background-color: snow;
-      line-height: 170%;
+     
+    nav #body_nav a{
 
+        font-size: 2vw;
+    
     }
-    .body_nav1{
-        padding-left: 4vw;
+    nav p{
+        font-size: 2vw;
     
     }
 
-    .body_nav2{
-        padding-right: 4vw;
-    
-    }
-    #body_nav a{
-        font-size: 3vw;
-        padding: none;
+    .cover a{
+        font-size: 2.5vw;
+        padding: 15px 18px;
+
     }
 
-    header button{
-        padding-top: 5px;
-        padding-bottom: 5px;
-        font-size: 3.3vw;
-    }
-    .body_header button{
-        padding-top: 5px;
-        padding-bottom: 5px;
-        font-size: 3.3vw;
+    .lookbook button {
+
+        font-size: 2.5vw;
+        padding: 15px 18px;
+
 
     }
     
-    .slideshow i:hover{
-        color: rgba(255, 0, 0, 0.932);
-    
-    }
-    .slideshow i{
-        font-size: 80px;
-        z-index: 999;
-        position: absolute;
-        bottom: 30px;
-        left: 0;
-        color: snow;
-        border: none;
-    
-    }
+   
 
-    .about h1{
-        font-size: 10vw;
-    }
     .about h2{
         font-size: 4.5vw;
     }
@@ -516,64 +301,29 @@ footer i{
         font-size: 2.5vw;
     }
 
-    .about img{
-        display: none;
-        
-    }
 
-    .shop h1{
-        font-size: 10vw;
-    }
   
-    .media {
-        padding-bottom: 300px;
-    }
-    .lookbook h1{
-        font-size: 10vw;
-    }
 
     .lookbook .column {
         width: 100%;
     }
 
-    .media h1{
-        font-size: 10vw;
-    }
-    .media iframe{
-        width: 250px;
-        height: 200px;
-    }
+
     
     #topbutton{
-        font-size: 6vw;
+        font-size: 4vw;
     }
 
-    #backbutton{
-        font-size: 4.4vw;
-    }
-
-    .media .column{
-        width: 100%;
+    footer a{
+        font-size: 2vw;
+        
     }
     footer p{
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
-        text-decoration: line-through;
-        text-decoration-color: snow;
-
+        font-size: 2vw;
+        
     }
-
-    .WIA h2{
-        font-size: 7vw;
-    }
-    .PC h2{
-        font-size: 7vw;
-    }
-    .U h2{
-        font-size: 7vw;
-    }
-    .RR h2{
-        font-size: 7vw;
+    footer{
+        padding-bottom: 1px;
     }
 
   }
