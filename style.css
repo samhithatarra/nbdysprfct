@@ -98,7 +98,7 @@ body{
 }
 
 
-.cover a{
+.cover p{
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     font-size: 1vw;
@@ -253,7 +253,7 @@ footer a{
 
 
 
-.display_cart div#collection-component-1618012940501 {
+.display_cart #collection-component-1618365539872 {
     display: none;
  }
 
