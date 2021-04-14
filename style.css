@@ -24,7 +24,7 @@ header{
 
 nav{
     text-align: center;
-    background-color: snow;
+    background-color: white;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -69,7 +69,7 @@ nav #body_nav a:hover{
 }
 
 body{
-    background-color: snow;
+    background-color: white;
     margin: 0;
     padding: 0;
     /* background-image: url(images/slideshow3.jpg); */
@@ -103,13 +103,13 @@ body{
     text-decoration: none;
     font-size: 1vw;
     background-color: black;
-    border: 2px solid snow;
+    border: 2px solid white;
     padding: 14px 16px;
     z-index: 998;
     position: absolute;
     bottom: 70px;
     left: 30px;
-    color: snow;
+    color: white;
 
 }
 
@@ -148,11 +148,11 @@ body{
     right: 0;
     z-index: 99;
     font-size: 1vw;
-    border: 2px solid snow;
+    border: 2px solid white;
     outline: none;
     background-color: black;
     padding: 14px 16px;
-    color: snow;
+    color: white;
     cursor: pointer;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -177,7 +177,7 @@ body{
     padding: 3px;
     position: relative;
     text-align: center;
-    color: snow;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -187,7 +187,7 @@ body{
 }
 
 .lookbook a{
-    color: snow;
+    color: white;
     text-decoration: none;
 }
 
@@ -206,13 +206,13 @@ body{
     text-decoration: none;
     font-size: 1vw;
     background-color: black;
-    border: 2px solid snow;
+    border: 2px solid white;
     padding: 14px 16px;
     z-index: 998;
     position: absolute;
     bottom: 60px;
     left: 20px;
-    color: snow;
+    color: white;
 
 }
 
@@ -222,7 +222,7 @@ body{
 footer{
     bottom: 0;
     clear: both;
-    background-color: snow;
+    background-color: white;
     text-align: left;
     padding-top: 40px;
     padding-bottom: 10px;
